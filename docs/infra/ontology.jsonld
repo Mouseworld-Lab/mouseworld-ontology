@@ -73,7 +73,7 @@
     "@id" : "http://purl.org/NET/rdflicense/APACHE2.0"
   } ],
   "http://purl.org/dc/terms/publisher" : [ {
-    "@id" : "https://github.com/candil-data-fabric"
+    "@id" : "https://github.com/Mouseworld-Lab"
   } ],
   "http://purl.org/dc/terms/title" : [ {
     "@value" : "The Mouseworld Ontology – Infra"
@@ -86,7 +86,7 @@
   } ],
   "http://schema.org/codeRepository" : [ {
     "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
-    "@value" : "https://github.com/candil-data-fabric/mouseworld-ontology"
+    "@value" : "https://github.com/Mouseworld-Lab/mouseworld-ontology"
   } ],
   "http://www.w3.org/2002/07/owl#priorVersion" : [ {
     "@id" : "https://w3id.org/mouseworld/infra"

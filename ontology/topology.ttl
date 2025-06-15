@@ -1,6 +1,6 @@
 @prefix dcterms: <http://purl.org/dc/terms/> .
 @prefix mod: <https://w3id.org/mod#> .
-@prefix mwtopo: <https://w3id.org/mouseworld/topology#> .
+@prefix mw-topo: <https://w3id.org/mouseworld/topology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix schema1: <http://schema.org/> .
@@ -71,11 +71,11 @@ mw-topo: a owl:Ontology ;
     dcterms:creator "Ignacio Dominguez Martinez-Casanueva" ;
     dcterms:description "Core MW Ontology module, which represents the network topology of the digital twin." ;
     dcterms:license <http://purl.org/NET/rdflicense/APACHE2.0> ;
-    dcterms:publisher <https://github.com/candil-data-fabric> ;
+    dcterms:publisher <https://github.com/Mouseworld-Lab> ;
     dcterms:title "The Mouseworld Ontology – Topology" ;
     vann:preferredNamespacePrefix "mw-topo" ;
     vann:preferredNamespaceUri mw-topo: ;
-    schema1:codeRepository "https://github.com/candil-data-fabric/mouseworld-ontology"^^xsd:anyURI ;
+    schema1:codeRepository "https://github.com/Mouseworld-Lab/mouseworld-ontology"^^xsd:anyURI ;
     owl:priorVersion <https://w3id.org/mouseworld/topology> ;
     owl:versionIRI <https://w3id.org/mouseworld/topology> ;
     owl:versionInfo "1.0.0" ;

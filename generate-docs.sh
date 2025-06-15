@@ -42,8 +42,7 @@ for directory in "$DIAGRAMS_DIR"/*/; do
     # Call the API and extract the Turtle data
     response=$(curl -s -F "data=@diagrams/$module_name/$module_name.xml" https://chowlk.linkeddata.es/api)
     # Extract the ttl_data field using jq (requires jq installed)
-    echo "$response"
-    ttl=$(printf '%s' "$response" | jq -r '.ttl_data')
+g    ttl=$(printf '%s' "$response" | jq -r '.ttl_data')
     # Save to .ttl file
     echo "$ttl" > "$ONTOLOGY_DIR/$module_name.ttl"
 done

@@ -1,2 +1,289 @@
-<h2 id="crossreference" class="list">Cross-reference for [Ontology Name] classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
-This section provides details for each class and property defined by [Ontology Name].
+<h2 id="crossreference" class="list">Cross-reference for The Mouseworld Ontology – Topology classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by The Mouseworld Ontology – Topology.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#Interface" title="https://w3id.org/mouseworld/topology#Interface">Interface</a></li>
+  <li><a href="#Link" title="https://w3id.org/mouseworld/topology#Link">Link</a></li>
+  <li><a href="#Node" title="https://w3id.org/mouseworld/topology#Node">Node</a></li>
+  <li><a href="#Topology" title="https://w3id.org/mouseworld/topology#Topology">Topology</a></li>
+ </ul>
+ <div class="entity" id="Interface">
+  <h3>Interface<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/topology#Interface</p>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#interfaceName" title="https://w3id.org/mouseworld/topology#interfaceName">interface name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#connectsInterface" title="https://w3id.org/mouseworld/topology#connectsInterface">connects interface</a> <sup class="type-op" title="object property">op</sup>, <a href="#interface" title="https://w3id.org/mouseworld/topology#interface">interface</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Link">
+  <h3>Link<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/topology#Link</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#connectsInterface" title="https://w3id.org/mouseworld/topology#connectsInterface">connects interface</a> <sup class="type-op" title="object property">op</sup>, <a href="#connectsNode" title="https://w3id.org/mouseworld/topology#connectsNode">connects node</a> <sup class="type-op" title="object property">op</sup>, <a href="#linkName" title="https://w3id.org/mouseworld/topology#linkName">link name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#link" title="https://w3id.org/mouseworld/topology#link">link</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Node">
+  <h3>Node<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/topology#Node</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd></dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#interface" title="https://w3id.org/mouseworld/topology#interface">interface</a> <sup class="type-op" title="object property">op</sup>, <a href="#nodeName" title="https://w3id.org/mouseworld/topology#nodeName">node name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#connectsNode" title="https://w3id.org/mouseworld/topology#connectsNode">connects node</a> <sup class="type-op" title="object property">op</sup>, <a href="#node" title="https://w3id.org/mouseworld/topology#node">node</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="Topology">
+  <h3>Topology<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/topology#Topology</p>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#link" title="https://w3id.org/mouseworld/topology#link">link</a> <sup class="type-op" title="object property">op</sup>, <a href="#node" title="https://w3id.org/mouseworld/topology#node">node</a> <sup class="type-op" title="object property">op</sup>, <a href="#topologyName" title="https://w3id.org/mouseworld/topology#topologyName">topology name</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#connectsInterface" title="https://w3id.org/mouseworld/topology#connectsInterface">connects interface</a></li>
+  <li><a href="#connectsNode" title="https://w3id.org/mouseworld/topology#connectsNode">connects node</a></li>
+  <li><a href="#interface" title="https://w3id.org/mouseworld/topology#interface">interface</a></li>
+  <li><a href="#link" title="https://w3id.org/mouseworld/topology#link">link</a></li>
+  <li><a href="#node" title="https://w3id.org/mouseworld/topology#node">node</a></li>
+ </ul>
+ <div class="entity" id="connectsInterface">
+  <h3>connects interface<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/topology#connectsInterface</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Link" title="https://w3id.org/mouseworld/topology#Link">Link</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Interface" title="https://w3id.org/mouseworld/topology#Interface">Interface</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="connectsNode">
+  <h3>connects node<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/topology#connectsNode</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Link" title="https://w3id.org/mouseworld/topology#Link">Link</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Node" title="https://w3id.org/mouseworld/topology#Node">Node</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="interface">
+  <h3>interface<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/topology#interface</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Node" title="https://w3id.org/mouseworld/topology#Node">Node</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Interface" title="https://w3id.org/mouseworld/topology#Interface">Interface</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="link">
+  <h3>link<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/topology#link</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Topology" title="https://w3id.org/mouseworld/topology#Topology">Topology</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Link" title="https://w3id.org/mouseworld/topology#Link">Link</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="node">
+  <h3>node<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/topology#node</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Topology" title="https://w3id.org/mouseworld/topology#Topology">Topology</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#Node" title="https://w3id.org/mouseworld/topology#Node">Node</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#interfaceName" title="https://w3id.org/mouseworld/topology#interfaceName">interface name</a></li>
+  <li><a href="#linkName" title="https://w3id.org/mouseworld/topology#linkName">link name</a></li>
+  <li><a href="#nodeName" title="https://w3id.org/mouseworld/topology#nodeName">node name</a></li>
+  <li><a href="#topologyName" title="https://w3id.org/mouseworld/topology#topologyName">topology name</a></li>
+ </ul>
+ <div class="entity" id="interfaceName">
+  <h3>interface name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/topology#interfaceName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Interface" title="https://w3id.org/mouseworld/topology#Interface">Interface</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="linkName">
+  <h3>link name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/topology#linkName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Link" title="https://w3id.org/mouseworld/topology#Link">Link</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="nodeName">
+  <h3>node name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/topology#nodeName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Node" title="https://w3id.org/mouseworld/topology#Node">Node</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="topologyName">
+  <h3>topology name<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/topology#topologyName</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#Topology" title="https://w3id.org/mouseworld/topology#Topology">Topology</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+</div>
+</div>

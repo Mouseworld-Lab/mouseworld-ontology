@@ -1,4 +1,267 @@
 [ {
   "@id" : "_:genid1",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ]
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/mouseworld/topology#connectsInterface"
+  } ]
+}, {
+  "@id" : "_:genid2",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#cardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "2"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/mouseworld/topology#connectsNode"
+  } ]
+}, {
+  "@id" : "_:genid3",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#minCardinality" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#nonNegativeInteger",
+    "@value" : "1"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "https://w3id.org/mouseworld/topology#interface"
+  } ]
+}, {
+  "@id" : "http://purl.org/dc/terms/contributor",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/created",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/creator",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/description",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/license",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/publisher",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/dc/terms/title",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespacePrefix",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://purl.org/vocab/vann/preferredNamespaceUri",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://schema.org/codeRepository",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2001/XMLSchema#date",
+  "@type" : [ "http://www.w3.org/2000/01/rdf-schema#Datatype" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#priorVersion",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionIRI",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "http://www.w3.org/2002/07/owl#versionInfo",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/mod#createdWith",
+  "@type" : [ "http://www.w3.org/2002/07/owl#AnnotationProperty" ]
+}, {
+  "@id" : "https://w3id.org/mouseworld/topology#",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Ontology" ],
+  "http://purl.org/dc/terms/contributor" : [ {
+    "@value" : "Javier Nuñez Fuente"
+  }, {
+    "@value" : "Lucia Cabanillas Rodriguez"
+  }, {
+    "@value" : "Yenny Moreno Meneses"
+  } ],
+  "http://purl.org/dc/terms/created" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#date",
+    "@value" : "2025-02-19"
+  } ],
+  "http://purl.org/dc/terms/creator" : [ {
+    "@value" : "Ignacio Dominguez Martinez-Casanueva"
+  } ],
+  "http://purl.org/dc/terms/description" : [ {
+    "@value" : "Core MW Ontology module, which represents the network topology of the digital twin."
+  } ],
+  "http://purl.org/dc/terms/license" : [ {
+    "@id" : "http://purl.org/NET/rdflicense/APACHE2.0"
+  } ],
+  "http://purl.org/dc/terms/publisher" : [ {
+    "@id" : "https://github.com/Mouseworld-Lab"
+  } ],
+  "http://purl.org/dc/terms/title" : [ {
+    "@value" : "The Mouseworld Ontology – Topology"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespacePrefix" : [ {
+    "@value" : "mw-topo"
+  } ],
+  "http://purl.org/vocab/vann/preferredNamespaceUri" : [ {
+    "@id" : "https://w3id.org/mouseworld/topology#"
+  } ],
+  "http://schema.org/codeRepository" : [ {
+    "@type" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "@value" : "https://github.com/Mouseworld-Lab/mouseworld-ontology"
+  } ],
+  "http://www.w3.org/2002/07/owl#priorVersion" : [ {
+    "@id" : "https://w3id.org/mouseworld/topology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionIRI" : [ {
+    "@id" : "https://w3id.org/mouseworld/topology"
+  } ],
+  "http://www.w3.org/2002/07/owl#versionInfo" : [ {
+    "@value" : "1.0.0"
+  } ],
+  "https://w3id.org/mod#createdWith" : [ {
+    "@id" : "https://chowlk.linkeddata.es/"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mouseworld/topology#Interface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Interface"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mouseworld/topology#Link",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Link"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid1"
+  }, {
+    "@id" : "_:genid2"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mouseworld/topology#Node",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Node"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "_:genid3"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mouseworld/topology#Topology",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "Topology"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mouseworld/topology#connectsInterface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/mouseworld/topology#Link"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "connects interface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/mouseworld/topology#Interface"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mouseworld/topology#connectsNode",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/mouseworld/topology#Link"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "connects node"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/mouseworld/topology#Node"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mouseworld/topology#interface",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/mouseworld/topology#Node"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "interface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/mouseworld/topology#Interface"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mouseworld/topology#interfaceName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/mouseworld/topology#Interface"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "interface name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mouseworld/topology#link",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/mouseworld/topology#Topology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "link"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/mouseworld/topology#Link"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mouseworld/topology#linkName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/mouseworld/topology#Link"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "link name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mouseworld/topology#node",
+  "@type" : [ "http://www.w3.org/2002/07/owl#ObjectProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/mouseworld/topology#Topology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "node"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "https://w3id.org/mouseworld/topology#Node"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mouseworld/topology#nodeName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/mouseworld/topology#Node"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "node name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
+}, {
+  "@id" : "https://w3id.org/mouseworld/topology#topologyName",
+  "@type" : [ "http://www.w3.org/2002/07/owl#DatatypeProperty" ],
+  "http://www.w3.org/2000/01/rdf-schema#domain" : [ {
+    "@id" : "https://w3id.org/mouseworld/topology#Topology"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#label" : [ {
+    "@value" : "topology name"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#range" : [ {
+    "@id" : "http://www.w3.org/2001/XMLSchema#string"
+  } ]
 } ]

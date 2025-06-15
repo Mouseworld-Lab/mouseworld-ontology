@@ -68,7 +68,7 @@
       "publisher" : [ {
         "identifier" : "publisher",
         "language" : "undefined",
-        "value" : "https://github.com/candil-data-fabric",
+        "value" : "https://github.com/Mouseworld-Lab",
         "type" : "iri"
       } ],
       "preferredNamespaceUri" : [ {
@@ -86,7 +86,7 @@
       "codeRepository" : [ {
         "identifier" : "codeRepository",
         "language" : "undefined",
-        "value" : "https://github.com/candil-data-fabric/mouseworld-ontology",
+        "value" : "https://github.com/Mouseworld-Lab/mouseworld-ontology",
         "type" : "label"
       } ],
       "title" : [ {
@@ -99,13 +99,13 @@
   },
   "namespace" : [ ],
   "class" : [ {
-    "id" : "2",
+    "id" : "0",
     "type" : "owl:Class"
   }, {
     "id" : "3",
     "type" : "rdfs:Datatype"
   }, {
-    "id" : "1",
+    "id" : "2",
     "type" : "owl:Thing"
   }, {
     "id" : "4",
@@ -122,7 +122,7 @@
       "IRI-based" : "DockerImage",
       "undefined" : "Docker Image"
     },
-    "id" : "2"
+    "id" : "0"
   }, {
     "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
     "baseIri" : "http://www.w3.org/2001/XMLSchema",
@@ -133,7 +133,7 @@
   }, {
     "iri" : "http://www.w3.org/2002/07/owl#Thing",
     "baseIri" : "http://owl2vowl.de",
-    "id" : "1",
+    "id" : "2",
     "label" : {
       "undefined" : "Thing"
     }
@@ -156,37 +156,26 @@
     "id" : "5"
   } ],
   "property" : [ {
-    "id" : "0",
+    "id" : "1",
     "type" : "owl:objectProperty"
   }, {
     "id" : "6",
-    "type" : "owl:objectProperty"
+    "type" : "owl:datatypeProperty"
   }, {
     "id" : "7",
-    "type" : "owl:datatypeProperty"
+    "type" : "owl:objectProperty"
   } ],
   "propertyAttribute" : [ {
     "iri" : "http://www.owl-ontologies.com/mw#destinationNetwork",
     "baseIri" : "http://www.owl-ontologies.com/mw",
-    "range" : "1",
+    "range" : "2",
     "label" : {
       "IRI-based" : "destinationNetwork",
       "undefined" : "destination network"
     },
-    "domain" : "1",
-    "attributes" : [ "external", "object" ],
-    "id" : "0"
-  }, {
-    "iri" : "https://w3id.org/mouseworld/infra#dockerImage",
-    "baseIri" : "https://w3id.org/mouseworld/infra",
-    "range" : "2",
-    "label" : {
-      "IRI-based" : "dockerImage",
-      "undefined" : "docker image"
-    },
-    "domain" : "4",
-    "attributes" : [ "object" ],
-    "id" : "6"
+    "domain" : "2",
+    "attributes" : [ "object", "external" ],
+    "id" : "1"
   }, {
     "iri" : "https://w3id.org/mouseworld/infra#imageUrl",
     "baseIri" : "https://w3id.org/mouseworld/infra",
@@ -195,8 +184,19 @@
       "IRI-based" : "imageUrl",
       "undefined" : "image url"
     },
-    "domain" : "2",
+    "domain" : "0",
     "attributes" : [ "datatype" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/infra#dockerImage",
+    "baseIri" : "https://w3id.org/mouseworld/infra",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "dockerImage",
+      "undefined" : "docker image"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
     "id" : "7"
   } ]
 }

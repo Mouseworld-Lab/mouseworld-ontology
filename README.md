@@ -25,7 +25,7 @@ The requirements of this ontology are written as competency questions/natural la
 
 The following diagrams shows the classes and properties defined in the ontology. The diagram follows the [Chowlk notation](https://chowlk.linkeddata.es/notation.html).
 
-![Mouseworld Ontology Diagram](diagrams/mouseworld-ontology-Complete.png)
+![Mouseworld Ontology Diagram](diagrams/overview/overview.svg)
 
 ### Ontology Code (OWL)
 
