@@ -7,11 +7,11 @@
 <https://w3id.org/mouseworld/platform#> <http://purl.org/dc/terms/creator> "Ignacio Dominguez Martinez-Casanueva" .
 <https://w3id.org/mouseworld/platform#> <http://purl.org/dc/terms/description> "MW Ontology module that represents network routing details of the digital twin." .
 <https://w3id.org/mouseworld/platform#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/APACHE2.0> .
-<https://w3id.org/mouseworld/platform#> <http://purl.org/dc/terms/publisher> <https://github.com/candil-data-fabric> .
+<https://w3id.org/mouseworld/platform#> <http://purl.org/dc/terms/publisher> <https://github.com/Mouseworld-Lab> .
 <https://w3id.org/mouseworld/platform#> <http://purl.org/dc/terms/title> "The Mouseworld Ontology – Routing" .
 <https://w3id.org/mouseworld/platform#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "mw-rt" .
 <https://w3id.org/mouseworld/platform#> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/mouseworld/routing#> .
-<https://w3id.org/mouseworld/platform#> <http://schema.org/codeRepository> "https://github.com/candil-data-fabric/mouseworld-ontology"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/mouseworld/platform#> <http://schema.org/codeRepository> "https://github.com/Mouseworld-Lab/mouseworld-ontology"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
 <https://w3id.org/mouseworld/platform#> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/mouseworld/routing> .
 <https://w3id.org/mouseworld/platform#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
 <https://w3id.org/mouseworld/platform#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .

@@ -15,11 +15,11 @@
                                          <http://purl.org/dc/terms/creator> "Ignacio Dominguez Martinez-Casanueva" ;
                                          <http://purl.org/dc/terms/description> "MW Ontology module that represents network routing details of the digital twin." ;
                                          <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/APACHE2.0> ;
-                                         <http://purl.org/dc/terms/publisher> <https://github.com/candil-data-fabric> ;
+                                         <http://purl.org/dc/terms/publisher> <https://github.com/Mouseworld-Lab> ;
                                          <http://purl.org/dc/terms/title> "The Mouseworld Ontology – Routing" ;
                                          <http://purl.org/vocab/vann/preferredNamespacePrefix> "mw-rt" ;
                                          <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/mouseworld/routing#> ;
-                                         <http://schema.org/codeRepository> "https://github.com/candil-data-fabric/mouseworld-ontology"^^xsd:anyURI ;
+                                         <http://schema.org/codeRepository> "https://github.com/Mouseworld-Lab/mouseworld-ontology"^^xsd:anyURI ;
                                          owl:priorVersion <https://w3id.org/mouseworld/routing> ;
                                          owl:versionInfo "1.0.0" ;
                                          <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .

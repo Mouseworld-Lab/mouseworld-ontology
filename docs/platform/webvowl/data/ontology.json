@@ -68,7 +68,7 @@
       "publisher" : [ {
         "identifier" : "publisher",
         "language" : "undefined",
-        "value" : "https://github.com/candil-data-fabric",
+        "value" : "https://github.com/Mouseworld-Lab",
         "type" : "iri"
       } ],
       "versionInfo" : [ {
@@ -86,7 +86,7 @@
       "codeRepository" : [ {
         "identifier" : "codeRepository",
         "language" : "undefined",
-        "value" : "https://github.com/candil-data-fabric/mouseworld-ontology",
+        "value" : "https://github.com/Mouseworld-Lab/mouseworld-ontology",
         "type" : "label"
       } ],
       "title" : [ {
@@ -268,19 +268,8 @@
   }, {
     "range" : "1",
     "domain" : "2",
-    "attributes" : [ "object", "anonymous" ],
+    "attributes" : [ "anonymous", "object" ],
     "id" : "9"
-  }, {
-    "iri" : "https://w3id.org/mouseworld/platform#platform",
-    "baseIri" : "https://w3id.org/mouseworld/platform",
-    "range" : "0",
-    "label" : {
-      "IRI-based" : "platform",
-      "undefined" : "platform"
-    },
-    "domain" : "2",
-    "attributes" : [ "object" ],
-    "id" : "10"
   }, {
     "iri" : "https://w3id.org/mouseworld/platform#supportsOperatingSystem",
     "baseIri" : "https://w3id.org/mouseworld/platform",
@@ -290,6 +279,17 @@
       "undefined" : "supports operating system"
     },
     "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/platform#platform",
+    "baseIri" : "https://w3id.org/mouseworld/platform",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "platform",
+      "undefined" : "platform"
+    },
+    "domain" : "2",
     "attributes" : [ "object" ],
     "id" : "11"
   }, {

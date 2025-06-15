@@ -1,8 +1,322 @@
 {
   "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
   "header" : {
-    "baseIris" : [ "http://www.w3.org/2000/01/rdf-schema" ],
-    "iri" : "No IRI set"
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "https://w3id.org/mouseworld/topology", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "undefined" : "The Mouseworld Ontology – Topology"
+    },
+    "iri" : "https://w3id.org/mouseworld/topology#",
+    "version" : "1.0.0",
+    "author" : [ "Ignacio Dominguez Martinez-Casanueva" ],
+    "description" : {
+      "undefined" : "Core MW Ontology module, which represents the network topology of the digital twin."
+    },
+    "other" : {
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "https://w3id.org/mouseworld/topology",
+        "type" : "iri"
+      } ],
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/rdflicense/APACHE2.0",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Ignacio Dominguez Martinez-Casanueva",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Javier Nuñez Fuente",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Lucia Cabanillas Rodriguez",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Yenny Moreno Meneses",
+        "type" : "label"
+      } ],
+      "createdWith" : [ {
+        "identifier" : "createdWith",
+        "language" : "undefined",
+        "value" : "https://chowlk.linkeddata.es/",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-02-19",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "mw-topo",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "https://github.com/Mouseworld-Lab",
+        "type" : "iri"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/mouseworld/topology#",
+        "type" : "iri"
+      } ],
+      "codeRepository" : [ {
+        "identifier" : "codeRepository",
+        "language" : "undefined",
+        "value" : "https://github.com/Mouseworld-Lab/mouseworld-ontology",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "The Mouseworld Ontology – Topology",
+        "type" : "label"
+      } ]
+    }
   },
-  "namespace" : [ ]
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/mouseworld/topology#Node",
+    "baseIri" : "https://w3id.org/mouseworld/topology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Node",
+      "undefined" : "Node"
+    },
+    "id" : "0"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "1",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/mouseworld/topology#Topology",
+    "baseIri" : "https://w3id.org/mouseworld/topology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Topology",
+      "undefined" : "Topology"
+    },
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "8",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/mouseworld/topology#Interface",
+    "baseIri" : "https://w3id.org/mouseworld/topology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Interface",
+      "undefined" : "Interface"
+    },
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/topology#Link",
+    "baseIri" : "https://w3id.org/mouseworld/topology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Link",
+      "undefined" : "Link"
+    },
+    "id" : "6"
+  } ],
+  "property" : [ {
+    "id" : "2",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "9",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "14",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "15",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/mouseworld/topology#topologyName",
+    "baseIri" : "https://w3id.org/mouseworld/topology",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "topologyName",
+      "undefined" : "topology name"
+    },
+    "domain" : "3",
+    "attributes" : [ "datatype" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/topology#connectsNode",
+    "baseIri" : "https://w3id.org/mouseworld/topology",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "connectsNode",
+      "undefined" : "connects node"
+    },
+    "cardinality" : "2",
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/topology#linkName",
+    "baseIri" : "https://w3id.org/mouseworld/topology",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "linkName",
+      "undefined" : "link name"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/topology#interface",
+    "baseIri" : "https://w3id.org/mouseworld/topology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "interface",
+      "undefined" : "interface"
+    },
+    "minCardinality" : "1",
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/topology#link",
+    "baseIri" : "https://w3id.org/mouseworld/topology",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "link",
+      "undefined" : "link"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/topology#interfaceName",
+    "baseIri" : "https://w3id.org/mouseworld/topology",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "interfaceName",
+      "undefined" : "interface name"
+    },
+    "domain" : "10",
+    "attributes" : [ "datatype" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/topology#node",
+    "baseIri" : "https://w3id.org/mouseworld/topology",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "node",
+      "undefined" : "node"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "14"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/topology#nodeName",
+    "baseIri" : "https://w3id.org/mouseworld/topology",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "nodeName",
+      "undefined" : "node name"
+    },
+    "domain" : "0",
+    "attributes" : [ "datatype" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/topology#connectsInterface",
+    "baseIri" : "https://w3id.org/mouseworld/topology",
+    "range" : "10",
+    "label" : {
+      "IRI-based" : "connectsInterface",
+      "undefined" : "connects interface"
+    },
+    "cardinality" : "2",
+    "domain" : "6",
+    "attributes" : [ "object" ],
+    "id" : "16"
+  } ]
 }

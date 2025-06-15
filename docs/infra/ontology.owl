@@ -19,11 +19,11 @@
         <terms:creator>Ignacio Dominguez Martinez-Casanueva</terms:creator>
         <terms:description>MW Ontology module that represents infrastructure details of the digital twin.</terms:description>
         <terms:license rdf:resource="http://purl.org/NET/rdflicense/APACHE2.0"/>
-        <terms:publisher rdf:resource="https://github.com/candil-data-fabric"/>
+        <terms:publisher rdf:resource="https://github.com/Mouseworld-Lab"/>
         <terms:title>The Mouseworld Ontology – Infra</terms:title>
         <vann:preferredNamespacePrefix>mw-infra</vann:preferredNamespacePrefix>
         <vann:preferredNamespaceUri rdf:resource="https://w3id.org/mouseworld/infra#"/>
-        <schema:codeRepository rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/candil-data-fabric/mouseworld-ontology</schema:codeRepository>
+        <schema:codeRepository rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/Mouseworld-Lab/mouseworld-ontology</schema:codeRepository>
         <owl:priorVersion rdf:resource="https://w3id.org/mouseworld/infra"/>
         <owl:versionInfo>1.0.0</owl:versionInfo>
         <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>

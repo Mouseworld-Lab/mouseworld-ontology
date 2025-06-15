@@ -1,11 +1,202 @@
+@prefix : <https://w3id.org/mouseworld/topology#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.w3.org/2002/07/owl#> .
+@base <https://w3id.org/mouseworld/topology#> .
 
-[ rdf:type owl:Ontology
- ] .
+<https://w3id.org/mouseworld/topology#> rdf:type owl:Ontology ;
+                                         owl:versionIRI <https://w3id.org/mouseworld/topology> ;
+                                         <http://purl.org/dc/terms/contributor> "Javier Nuñez Fuente" ,
+                                                                                "Lucia Cabanillas Rodriguez" ,
+                                                                                "Yenny Moreno Meneses" ;
+                                         <http://purl.org/dc/terms/created> "2025-02-19"^^xsd:date ;
+                                         <http://purl.org/dc/terms/creator> "Ignacio Dominguez Martinez-Casanueva" ;
+                                         <http://purl.org/dc/terms/description> "Core MW Ontology module, which represents the network topology of the digital twin." ;
+                                         <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/APACHE2.0> ;
+                                         <http://purl.org/dc/terms/publisher> <https://github.com/Mouseworld-Lab> ;
+                                         <http://purl.org/dc/terms/title> "The Mouseworld Ontology – Topology" ;
+                                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "mw-topo" ;
+                                         <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/mouseworld/topology#> ;
+                                         <http://schema.org/codeRepository> "https://github.com/Mouseworld-Lab/mouseworld-ontology"^^xsd:anyURI ;
+                                         owl:priorVersion <https://w3id.org/mouseworld/topology> ;
+                                         owl:versionInfo "1.0.0" ;
+                                         <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/codeRepository
+<http://schema.org/codeRepository> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#priorVersion
+owl:priorVersion rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/mouseworld/topology#connectsInterface
+:connectsInterface rdf:type owl:ObjectProperty ;
+                   rdfs:domain :Link ;
+                   rdfs:range :Interface ;
+                   rdfs:label "connects interface" .
+
+
+###  https://w3id.org/mouseworld/topology#connectsNode
+:connectsNode rdf:type owl:ObjectProperty ;
+              rdfs:domain :Link ;
+              rdfs:range :Node ;
+              rdfs:label "connects node" .
+
+
+###  https://w3id.org/mouseworld/topology#interface
+:interface rdf:type owl:ObjectProperty ;
+           rdfs:domain :Node ;
+           rdfs:range :Interface ;
+           rdfs:label "interface" .
+
+
+###  https://w3id.org/mouseworld/topology#link
+:link rdf:type owl:ObjectProperty ;
+      rdfs:domain :Topology ;
+      rdfs:range :Link ;
+      rdfs:label "link" .
+
+
+###  https://w3id.org/mouseworld/topology#node
+:node rdf:type owl:ObjectProperty ;
+      rdfs:domain :Topology ;
+      rdfs:range :Node ;
+      rdfs:label "node" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/mouseworld/topology#interfaceName
+:interfaceName rdf:type owl:DatatypeProperty ;
+               rdfs:domain :Interface ;
+               rdfs:range xsd:string ;
+               rdfs:label "interface name" .
+
+
+###  https://w3id.org/mouseworld/topology#linkName
+:linkName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Link ;
+          rdfs:range xsd:string ;
+          rdfs:label "link name" .
+
+
+###  https://w3id.org/mouseworld/topology#nodeName
+:nodeName rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Node ;
+          rdfs:range xsd:string ;
+          rdfs:label "node name" .
+
+
+###  https://w3id.org/mouseworld/topology#topologyName
+:topologyName rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Topology ;
+              rdfs:range xsd:string ;
+              rdfs:label "topology name" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/mouseworld/topology#Interface
+:Interface rdf:type owl:Class ;
+           rdfs:label "Interface" .
+
+
+###  https://w3id.org/mouseworld/topology#Link
+:Link rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty :connectsInterface ;
+                        owl:cardinality "2"^^xsd:nonNegativeInteger
+                      ] ,
+                      [ rdf:type owl:Restriction ;
+                        owl:onProperty :connectsNode ;
+                        owl:cardinality "2"^^xsd:nonNegativeInteger
+                      ] ;
+      rdfs:label "Link" .
+
+
+###  https://w3id.org/mouseworld/topology#Node
+:Node rdf:type owl:Class ;
+      rdfs:subClassOf [ rdf:type owl:Restriction ;
+                        owl:onProperty :interface ;
+                        owl:minCardinality "1"^^xsd:nonNegativeInteger
+                      ] ;
+      rdfs:label "Node" .
+
+
+###  https://w3id.org/mouseworld/topology#Topology
+:Topology rdf:type owl:Class ;
+          rdfs:label "Topology" .
+
 
 ###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/
