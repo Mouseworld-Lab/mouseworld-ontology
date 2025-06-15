@@ -1,0 +1,113 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix mw-pm: <https://w3id.org/mouseworld/platform#> .
+@prefix mw-topo: <https://w3id.org/mouseworld/topology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:contributor a owl:AnnotationProperty .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:publisher a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+schema1:codeRepository a owl:AnnotationProperty .
+
+owl:priorVersion a owl:AnnotationProperty .
+
+owl:versionIRI a owl:AnnotationProperty .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+mw-pm:hostname a owl:DatatypeProperty ;
+    rdfs:label "hostname" ;
+    rdfs:domain mw-pm:Router ;
+    rdfs:range xsd:string .
+
+mw-pm:operatingSystem a owl:ObjectProperty ;
+    rdfs:label "operating system" ;
+    rdfs:domain mw-pm:Router ;
+    rdfs:range mw-pm:OperatingSystem .
+
+mw-pm:osName a owl:DatatypeProperty ;
+    rdfs:label "os name" ;
+    rdfs:domain mw-pm:OperatingSystem ;
+    rdfs:range xsd:string .
+
+mw-pm:osVersion a owl:DatatypeProperty ;
+    rdfs:label "os version" ;
+    rdfs:domain mw-pm:OperatingSystem ;
+    rdfs:range xsd:string .
+
+mw-pm:platform a owl:ObjectProperty ;
+    rdfs:label "platform" ;
+    rdfs:domain mw-pm:Router ;
+    rdfs:range mw-pm:Platform .
+
+mw-pm:platformName a owl:DatatypeProperty ;
+    rdfs:label "platform name" ;
+    rdfs:domain mw-pm:Platform ;
+    rdfs:range xsd:string .
+
+mw-pm:supportsOperatingSystem a owl:ObjectProperty ;
+    rdfs:label "supports operating system" ;
+    rdfs:domain mw-pm:Platform ;
+    rdfs:range mw-pm:OperatingSystem .
+
+mw-pm:vendor a owl:ObjectProperty ;
+    rdfs:label "vendor" ;
+    rdfs:range mw-pm:Vendor .
+
+mw-pm:vendorName a owl:DatatypeProperty ;
+    rdfs:label "vendor name" ;
+    rdfs:domain mw-pm:Vendor ;
+    rdfs:range xsd:string .
+
+mw-pm: a owl:Ontology ;
+    dcterms:contributor "Javier Nuñez Fuente",
+        "Lucia Cabanillas Rodriguez",
+        "Yenny Moreno Meneses" ;
+    dcterms:created "2025-02-19"^^xsd:date ;
+    dcterms:creator "Ignacio Dominguez Martinez-Casanueva" ;
+    dcterms:description "MW Ontology module that represents network platform details of the digital twin." ;
+    dcterms:license <http://purl.org/NET/rdflicense/APACHE2.0> ;
+    dcterms:publisher <https://github.com/candil-data-fabric> ;
+    dcterms:title "The Mouseworld Ontology – Platform" ;
+    vann:preferredNamespacePrefix "mw-pm" ;
+    vann:preferredNamespaceUri mw-pm: ;
+    schema1:codeRepository "https://github.com/candil-data-fabric/mouseworld-ontology"^^xsd:anyURI ;
+    owl:priorVersion <https://w3id.org/mouseworld/platform> ;
+    owl:versionIRI <https://w3id.org/mouseworld/platform> ;
+    owl:versionInfo "1.0.0" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+mw-topo:Node a owl:Class ;
+    rdfs:label "Node" .
+
+mw-pm:Vendor a owl:Class ;
+    rdfs:label "Vendor" .
+
+mw-pm:Platform a owl:Class ;
+    rdfs:label "Platform" .
+
+mw-pm:Router a owl:Class ;
+    rdfs:label "Router" ;
+    rdfs:subClassOf mw-topo:Node .
+
+mw-pm:OperatingSystem a owl:Class ;
+    rdfs:label "Operating System" .

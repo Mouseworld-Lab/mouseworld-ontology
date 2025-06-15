@@ -1,0 +1,362 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "https://w3id.org/mouseworld/topology", "https://w3id.org/mouseworld/platform", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "undefined" : "The Mouseworld Ontology – Platform"
+    },
+    "iri" : "https://w3id.org/mouseworld/platform#",
+    "version" : "1.0.0",
+    "author" : [ "Ignacio Dominguez Martinez-Casanueva" ],
+    "description" : {
+      "undefined" : "MW Ontology module that represents network platform details of the digital twin."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/rdflicense/APACHE2.0",
+        "type" : "iri"
+      } ],
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "https://w3id.org/mouseworld/platform",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Ignacio Dominguez Martinez-Casanueva",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Yenny Moreno Meneses",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Lucia Cabanillas Rodriguez",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Javier Nuñez Fuente",
+        "type" : "label"
+      } ],
+      "createdWith" : [ {
+        "identifier" : "createdWith",
+        "language" : "undefined",
+        "value" : "https://chowlk.linkeddata.es/",
+        "type" : "iri"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-02-19",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "mw-pm",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "https://github.com/candil-data-fabric",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/mouseworld/platform#",
+        "type" : "iri"
+      } ],
+      "codeRepository" : [ {
+        "identifier" : "codeRepository",
+        "language" : "undefined",
+        "value" : "https://github.com/candil-data-fabric/mouseworld-ontology",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "The Mouseworld Ontology – Platform",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "7",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "15",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/mouseworld/platform#Platform",
+    "baseIri" : "https://w3id.org/mouseworld/platform",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Platform",
+      "undefined" : "Platform"
+    },
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/topology#Node",
+    "baseIri" : "https://w3id.org/mouseworld/topology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Node",
+      "undefined" : "Node"
+    },
+    "subClasses" : [ "2" ],
+    "attributes" : [ "external" ],
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "4",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "7",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "8",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/mouseworld/platform#Router",
+    "baseIri" : "https://w3id.org/mouseworld/platform",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Router",
+      "undefined" : "Router"
+    },
+    "id" : "2",
+    "superClasses" : [ "1" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "15",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/mouseworld/platform#OperatingSystem",
+    "baseIri" : "https://w3id.org/mouseworld/platform",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OperatingSystem",
+      "undefined" : "Operating System"
+    },
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/platform#Vendor",
+    "baseIri" : "https://w3id.org/mouseworld/platform",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vendor",
+      "undefined" : "Vendor"
+    },
+    "id" : "13"
+  } ],
+  "property" : [ {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "10",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "16",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "18",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/mouseworld/platform#operatingSystem",
+    "baseIri" : "https://w3id.org/mouseworld/platform",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "operatingSystem",
+      "undefined" : "operating system"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "5"
+  }, {
+    "range" : "1",
+    "domain" : "2",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/platform#platform",
+    "baseIri" : "https://w3id.org/mouseworld/platform",
+    "range" : "0",
+    "label" : {
+      "IRI-based" : "platform",
+      "undefined" : "platform"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/platform#supportsOperatingSystem",
+    "baseIri" : "https://w3id.org/mouseworld/platform",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "supportsOperatingSystem",
+      "undefined" : "supports operating system"
+    },
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/platform#vendor",
+    "baseIri" : "https://w3id.org/mouseworld/platform",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "vendor",
+      "undefined" : "vendor"
+    },
+    "domain" : "8",
+    "attributes" : [ "object" ],
+    "id" : "12"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/platform#platformName",
+    "baseIri" : "https://w3id.org/mouseworld/platform",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "platformName",
+      "undefined" : "platform name"
+    },
+    "domain" : "0",
+    "attributes" : [ "datatype" ],
+    "id" : "16"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/platform#vendorName",
+    "baseIri" : "https://w3id.org/mouseworld/platform",
+    "range" : "7",
+    "label" : {
+      "IRI-based" : "vendorName",
+      "undefined" : "vendor name"
+    },
+    "domain" : "13",
+    "attributes" : [ "datatype" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/platform#hostname",
+    "baseIri" : "https://w3id.org/mouseworld/platform",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "hostname",
+      "undefined" : "hostname"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/platform#osVersion",
+    "baseIri" : "https://w3id.org/mouseworld/platform",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "osVersion",
+      "undefined" : "os version"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/platform#osName",
+    "baseIri" : "https://w3id.org/mouseworld/platform",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "osName",
+      "undefined" : "os name"
+    },
+    "domain" : "6",
+    "attributes" : [ "datatype" ],
+    "id" : "20"
+  } ]
+}

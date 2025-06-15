@@ -1,0 +1,505 @@
+@prefix : <https://w3id.org/candil/mouseworld#> .
+@prefix mw: <https://w3id.org/candil/mouseworld#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <https://w3id.org/candil/mouseworld#> .
+
+<https://w3id.org/candil/mouseworld#> rdf:type owl:Ontology ;
+                                       owl:versionIRI <https://w3id.org/candil/mouseworld> ;
+                                       dcterms:contributor "Javier Nuñez Fuente" ,
+                                                           "Lucia Cabanillas Rodriguez" ,
+                                                           "Yenny Moreno Meneses" ;
+                                       dcterms:creator "Ignacio Dominguez Martinez-Casanueva" ;
+                                       dcterms:description "An ontology for modeling network digital twins" ;
+                                       dcterms:modified "2025-02-19"^^xsd:date ;
+                                       dcterms:title "Mouseworld Ontology" ;
+                                       vann:preferredNamespacePrefix "mw" ;
+                                       vann:preferredNamespaceUri <https://w3id.org/candil/mouseworld#> ;
+                                       owl:priorVersion <https://w3id.org/candil/mouseworld> ;
+                                       owl:versionInfo "0.10.0" ;
+                                       mod:createdWith <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+dcterms:contributor rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+dcterms:creator rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+dcterms:description rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/modified
+dcterms:modified rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+dcterms:title rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+vann:preferredNamespacePrefix rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+vann:preferredNamespaceUri rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#priorVersion
+owl:priorVersion rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+mod:createdWith rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/candil/mouseworld#assignedNetwork
+mw:assignedNetwork rdf:type owl:ObjectProperty ;
+                   rdfs:domain mw:OspfConfiguration ;
+                   rdfs:range mw:IpNetwork ;
+                   rdfs:label "assigned network" .
+
+
+###  https://w3id.org/candil/mouseworld#belongsToNetwork
+mw:belongsToNetwork rdf:type owl:ObjectProperty ;
+                    rdfs:domain mw:IpAddress ;
+                    rdfs:range mw:IpNetwork ;
+                    rdfs:label "belongs to network" .
+
+
+###  https://w3id.org/candil/mouseworld#connectsInterface
+mw:connectsInterface rdf:type owl:ObjectProperty ;
+                     rdfs:domain mw:Link ;
+                     rdfs:range mw:Interface ;
+                     rdfs:label "connects interface" .
+
+
+###  https://w3id.org/candil/mouseworld#connectsNode
+mw:connectsNode rdf:type owl:ObjectProperty ;
+                rdfs:domain mw:Link ;
+                rdfs:range mw:Node ;
+                rdfs:label "connects node" .
+
+
+###  https://w3id.org/candil/mouseworld#destinationNetwork
+mw:destinationNetwork rdf:type owl:ObjectProperty ;
+                      rdfs:domain mw:DefaultStaticRoute ,
+                                  mw:StaticRoute ;
+                      rdfs:range mw:IpNetwork ;
+                      rdfs:label "destination network" .
+
+
+###  https://w3id.org/candil/mouseworld#dockerImage
+mw:dockerImage rdf:type owl:ObjectProperty ;
+               rdfs:range mw:DockerImage ;
+               rdfs:label "docker image" .
+
+
+###  https://w3id.org/candil/mouseworld#interface
+mw:interface rdf:type owl:ObjectProperty ;
+             rdfs:domain mw:Node ;
+             rdfs:range mw:Interface ;
+             rdfs:label "interface" .
+
+
+###  https://w3id.org/candil/mouseworld#ipAddress
+mw:ipAddress rdf:type owl:ObjectProperty ;
+             rdfs:domain mw:IpInterface ;
+             rdfs:range mw:IpAddress ;
+             rdfs:label "ip address" .
+
+
+###  https://w3id.org/candil/mouseworld#link
+mw:link rdf:type owl:ObjectProperty ;
+        rdfs:domain mw:Topology ;
+        rdfs:range mw:Link ;
+        rdfs:label "link" .
+
+
+###  https://w3id.org/candil/mouseworld#nextHop
+mw:nextHop rdf:type owl:ObjectProperty ;
+           rdfs:domain mw:StaticRoute ;
+           rdfs:range mw:IpAddress ;
+           rdfs:label "next hop" .
+
+
+###  https://w3id.org/candil/mouseworld#node
+mw:node rdf:type owl:ObjectProperty ;
+        rdfs:domain mw:Topology ;
+        rdfs:range mw:Node ;
+        rdfs:label "node" .
+
+
+###  https://w3id.org/candil/mouseworld#operatingSystem
+mw:operatingSystem rdf:type owl:ObjectProperty ;
+                   rdfs:domain mw:Router ;
+                   rdfs:range mw:OperatingSystem ;
+                   rdfs:label "operating system" .
+
+
+###  https://w3id.org/candil/mouseworld#ospfArea
+mw:ospfArea rdf:type owl:ObjectProperty ;
+            rdfs:domain mw:OspfConfiguration ;
+            rdfs:range mw:OspfArea ;
+            rdfs:label "ospf area" .
+
+
+###  https://w3id.org/candil/mouseworld#ospfConfiguration
+mw:ospfConfiguration rdf:type owl:ObjectProperty ;
+                     rdfs:domain mw:OspfRouter ;
+                     rdfs:range mw:OspfConfiguration ;
+                     rdfs:label "ospf configuration" .
+
+
+###  https://w3id.org/candil/mouseworld#ospfRouter
+mw:ospfRouter rdf:type owl:ObjectProperty ;
+              rdfs:domain mw:Router ;
+              rdfs:range mw:OspfRouter ;
+              rdfs:label "ospf router" .
+
+
+###  https://w3id.org/candil/mouseworld#platform
+mw:platform rdf:type owl:ObjectProperty ;
+            rdfs:domain mw:Router ;
+            rdfs:range mw:Platform ;
+            rdfs:label "platform" .
+
+
+###  https://w3id.org/candil/mouseworld#role
+mw:role rdf:type owl:ObjectProperty ;
+        rdfs:domain mw:CustomNode ;
+        rdfs:range mw:Role ;
+        rdfs:label "role" .
+
+
+###  https://w3id.org/candil/mouseworld#staticRoute
+mw:staticRoute rdf:type owl:ObjectProperty ;
+               rdfs:domain mw:Node ;
+               rdfs:range mw:StaticRoute ;
+               rdfs:label "static route" .
+
+
+###  https://w3id.org/candil/mouseworld#supportsOperatingSystem
+mw:supportsOperatingSystem rdf:type owl:ObjectProperty ;
+                           rdfs:domain mw:Platform ;
+                           rdfs:range mw:OperatingSystem ;
+                           rdfs:label "supports operating system" .
+
+
+###  https://w3id.org/candil/mouseworld#vendor
+mw:vendor rdf:type owl:ObjectProperty ;
+          rdfs:range mw:Vendor ;
+          rdfs:label "vendor" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/candil/mouseworld#addressValue
+mw:addressValue rdf:type owl:DatatypeProperty ;
+                rdfs:domain mw:IpAddress ,
+                            mw:IpNetwork ;
+                rdfs:range xsd:string ;
+                rdfs:label "address value" .
+
+
+###  https://w3id.org/candil/mouseworld#areaId
+mw:areaId rdf:type owl:DatatypeProperty ;
+          rdfs:domain mw:OspfArea ;
+          rdfs:range xsd:string ;
+          rdfs:label "area id" .
+
+
+###  https://w3id.org/candil/mouseworld#hostname
+mw:hostname rdf:type owl:DatatypeProperty ;
+            rdfs:domain mw:Router ;
+            rdfs:range xsd:string ;
+            rdfs:label "hostname" .
+
+
+###  https://w3id.org/candil/mouseworld#imageUrl
+mw:imageUrl rdf:type owl:DatatypeProperty ;
+            rdfs:domain mw:DockerImage ;
+            rdfs:range xsd:anyURI ;
+            rdfs:label "image url" .
+
+
+###  https://w3id.org/candil/mouseworld#interfaceName
+mw:interfaceName rdf:type owl:DatatypeProperty ;
+                 rdfs:domain mw:Interface ;
+                 rdfs:range xsd:string ;
+                 rdfs:label "interface name" .
+
+
+###  https://w3id.org/candil/mouseworld#networkMask
+mw:networkMask rdf:type owl:DatatypeProperty ;
+               rdfs:domain mw:IpNetwork ;
+               rdfs:range xsd:string ;
+               rdfs:label "network mask" .
+
+
+###  https://w3id.org/candil/mouseworld#networkPrefix
+mw:networkPrefix rdf:type owl:DatatypeProperty ;
+                 rdfs:label "network prefix" .
+
+
+###  https://w3id.org/candil/mouseworld#nodeId
+mw:nodeId rdf:type owl:DatatypeProperty ;
+          rdfs:domain mw:Node ;
+          rdfs:range rdfs:Literal ;
+          rdfs:label "node id" .
+
+
+###  https://w3id.org/candil/mouseworld#osName
+mw:osName rdf:type owl:DatatypeProperty ;
+          rdfs:domain mw:OperatingSystem ;
+          rdfs:range xsd:string ;
+          rdfs:label "os name" .
+
+
+###  https://w3id.org/candil/mouseworld#osVersion
+mw:osVersion rdf:type owl:DatatypeProperty ;
+             rdfs:domain mw:OperatingSystem ;
+             rdfs:range xsd:string ;
+             rdfs:label "os version" .
+
+
+###  https://w3id.org/candil/mouseworld#platformName
+mw:platformName rdf:type owl:DatatypeProperty ;
+                rdfs:domain mw:Platform ;
+                rdfs:range xsd:string ;
+                rdfs:label "platform name" .
+
+
+###  https://w3id.org/candil/mouseworld#routerId
+mw:routerId rdf:type owl:DatatypeProperty ;
+            rdfs:domain mw:OspfRouter ;
+            rdfs:range rdfs:Literal ;
+            rdfs:label "router id" .
+
+
+###  https://w3id.org/candil/mouseworld#topologyId
+mw:topologyId rdf:type owl:DatatypeProperty ;
+              rdfs:domain mw:Topology ;
+              rdfs:range rdfs:Literal ;
+              rdfs:label "topology id" .
+
+
+###  https://w3id.org/candil/mouseworld#vendorName
+mw:vendorName rdf:type owl:DatatypeProperty ;
+              rdfs:domain mw:Vendor ;
+              rdfs:range xsd:string ;
+              rdfs:label "vendor name" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/candil/mouseworld#Client
+mw:Client rdf:type owl:Class ;
+          rdfs:subClassOf mw:Role ;
+          rdfs:label "Client" .
+
+
+###  https://w3id.org/candil/mouseworld#CustomNode
+mw:CustomNode rdf:type owl:Class ;
+              rdfs:subClassOf mw:Node ;
+              rdfs:label "Custom Node" .
+
+
+###  https://w3id.org/candil/mouseworld#DefaultStaticRoute
+mw:DefaultStaticRoute rdf:type owl:Class ;
+                      rdfs:subClassOf mw:StaticRoute ,
+                                      [ rdf:type owl:Restriction ;
+                                        owl:onProperty mw:destinationNetwork ;
+                                        owl:hasValue mw:DefaultIpNetwork
+                                      ] ;
+                      rdfs:label "Default Static Route" .
+
+
+###  https://w3id.org/candil/mouseworld#DockerImage
+mw:DockerImage rdf:type owl:Class ;
+               rdfs:label "Docker Image" .
+
+
+###  https://w3id.org/candil/mouseworld#HeavyHitterClient
+mw:HeavyHitterClient rdf:type owl:Class ;
+                     rdfs:subClassOf mw:Client ;
+                     rdfs:label "Heavy Hitter Client" .
+
+
+###  https://w3id.org/candil/mouseworld#HeavyHitterServer
+mw:HeavyHitterServer rdf:type owl:Class ;
+                     rdfs:subClassOf mw:Server ;
+                     rdfs:label "Heavy Hitter Server" .
+
+
+###  https://w3id.org/candil/mouseworld#Interface
+mw:Interface rdf:type owl:Class ;
+             rdfs:label "Interface" .
+
+
+###  https://w3id.org/candil/mouseworld#IpAddress
+mw:IpAddress rdf:type owl:Class ;
+             rdfs:label "Ip Address" .
+
+
+###  https://w3id.org/candil/mouseworld#IpInterface
+mw:IpInterface rdf:type owl:Class ;
+               rdfs:subClassOf mw:Interface ;
+               rdfs:label "Ip Interface" .
+
+
+###  https://w3id.org/candil/mouseworld#IpNetwork
+mw:IpNetwork rdf:type owl:Class ;
+             rdfs:label "Ip Network" .
+
+
+###  https://w3id.org/candil/mouseworld#Link
+mw:Link rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty mw:connectsInterface ;
+                          owl:cardinality "2"^^xsd:nonNegativeInteger
+                        ] ,
+                        [ rdf:type owl:Restriction ;
+                          owl:onProperty mw:connectsNode ;
+                          owl:cardinality "2"^^xsd:nonNegativeInteger
+                        ] ;
+        rdfs:label "Link" .
+
+
+###  https://w3id.org/candil/mouseworld#Node
+mw:Node rdf:type owl:Class ;
+        rdfs:subClassOf [ rdf:type owl:Restriction ;
+                          owl:onProperty mw:interface ;
+                          owl:minCardinality "1"^^xsd:nonNegativeInteger
+                        ] ;
+        rdfs:label "Node" .
+
+
+###  https://w3id.org/candil/mouseworld#OperatingSystem
+mw:OperatingSystem rdf:type owl:Class ;
+                   rdfs:label "Operating System" .
+
+
+###  https://w3id.org/candil/mouseworld#OspfArea
+mw:OspfArea rdf:type owl:Class ;
+            rdfs:label "Ospf Area" .
+
+
+###  https://w3id.org/candil/mouseworld#OspfConfiguration
+mw:OspfConfiguration rdf:type owl:Class ;
+                     rdfs:label "Ospf Configuration" .
+
+
+###  https://w3id.org/candil/mouseworld#OspfRouter
+mw:OspfRouter rdf:type owl:Class ;
+              rdfs:label "Ospf Router" .
+
+
+###  https://w3id.org/candil/mouseworld#Platform
+mw:Platform rdf:type owl:Class ;
+            rdfs:label "Platform" .
+
+
+###  https://w3id.org/candil/mouseworld#Role
+mw:Role rdf:type owl:Class ;
+        rdfs:label "Role" .
+
+
+###  https://w3id.org/candil/mouseworld#Router
+mw:Router rdf:type owl:Class ;
+          rdfs:subClassOf mw:Node ;
+          rdfs:label "Router" .
+
+
+###  https://w3id.org/candil/mouseworld#Server
+mw:Server rdf:type owl:Class ;
+          rdfs:subClassOf mw:Role ;
+          rdfs:label "Server" .
+
+
+###  https://w3id.org/candil/mouseworld#StaticRoute
+mw:StaticRoute rdf:type owl:Class ;
+               rdfs:label "Static Route" .
+
+
+###  https://w3id.org/candil/mouseworld#Topology
+mw:Topology rdf:type owl:Class ;
+            rdfs:label "Topology" .
+
+
+###  https://w3id.org/candil/mouseworld#Vendor
+mw:Vendor rdf:type owl:Class ;
+          rdfs:label "Vendor" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/candil/mouseworld#BenignHeavyHitterClient
+mw:BenignHeavyHitterClient rdf:type owl:NamedIndividual ,
+                                    mw:HeavyHitterClient .
+
+
+###  https://w3id.org/candil/mouseworld#BenignHeavyHitterServer
+mw:BenignHeavyHitterServer rdf:type owl:NamedIndividual ,
+                                    mw:HeavyHitterServer .
+
+
+###  https://w3id.org/candil/mouseworld#DDoSAttacker
+mw:DDoSAttacker rdf:type owl:NamedIndividual ,
+                         mw:HeavyHitterClient .
+
+
+###  https://w3id.org/candil/mouseworld#DDoSVictim
+mw:DDoSVictim rdf:type owl:NamedIndividual ,
+                       mw:HeavyHitterServer .
+
+
+###  https://w3id.org/candil/mouseworld#DefaultIpNetwork
+mw:DefaultIpNetwork rdf:type owl:NamedIndividual ,
+                             mw:IpNetwork ;
+                    mw:addressValue "0.0.0.0" ;
+                    mw:networkMask "255.255.255.0" ;
+                    mw:networkPrefix "0" .
+
+
+###  https://w3id.org/candil/mouseworld#StandardClient
+mw:StandardClient rdf:type owl:NamedIndividual ,
+                           mw:Client .
+
+
+###  https://w3id.org/candil/mouseworld#StandardServer
+mw:StandardServer rdf:type owl:NamedIndividual ,
+                           mw:Server .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

@@ -1,0 +1,250 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/mouseworld/infra#"
+     xml:base="https://w3id.org/mouseworld/infra"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:schema="http://schema.org/">
+    <owl:Ontology rdf:about="https://w3id.org/mouseworld/infra#">
+        <owl:versionIRI rdf:resource="https://w3id.org/mouseworld/infra"/>
+        <terms:contributor>Javier Nuñez Fuente</terms:contributor>
+        <terms:contributor>Lucia Cabanillas Rodriguez</terms:contributor>
+        <terms:contributor>Yenny Moreno Meneses</terms:contributor>
+        <terms:created rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-02-19</terms:created>
+        <terms:creator>Ignacio Dominguez Martinez-Casanueva</terms:creator>
+        <terms:description>MW Ontology module that represents infrastructure details of the digital twin.</terms:description>
+        <terms:license rdf:resource="http://purl.org/NET/rdflicense/APACHE2.0"/>
+        <terms:publisher rdf:resource="https://github.com/candil-data-fabric"/>
+        <terms:title>The Mouseworld Ontology – Infra</terms:title>
+        <vann:preferredNamespacePrefix>mw-infra</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/mouseworld/infra#"/>
+        <schema:codeRepository rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://github.com/candil-data-fabric/mouseworld-ontology</schema:codeRepository>
+        <owl:priorVersion rdf:resource="https://w3id.org/mouseworld/infra"/>
+        <owl:versionInfo>1.0.0</owl:versionInfo>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/created -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/created"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/license"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/publisher"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://schema.org/codeRepository -->
+
+
+    <owl:AnnotationProperty rdf:about="http://schema.org/codeRepository"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#priorVersion -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#priorVersion"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.owl-ontologies.com/mw#destinationNetwork -->
+
+
+    <owl:ObjectProperty rdf:about="http://www.owl-ontologies.com/mw#destinationNetwork">
+        <rdfs:label>destination network</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/mouseworld/infra#dockerImage -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/mouseworld/infra#dockerImage">
+        <rdfs:range rdf:resource="https://w3id.org/mouseworld/infra#DockerImage"/>
+        <rdfs:label>docker image</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/mouseworld/infra#imageUrl -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/mouseworld/infra#imageUrl">
+        <rdfs:domain rdf:resource="https://w3id.org/mouseworld/infra#DockerImage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label>image url</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/mouseworld/infra#DockerImage -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mouseworld/infra#DockerImage">
+        <rdfs:label>Docker Image</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/mouseworld/platform#OperatingSystem -->
+
+
+    <owl:Class rdf:about="https://w3id.org/mouseworld/platform#OperatingSystem">
+        <rdfs:label>Operating System</rdfs:label>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

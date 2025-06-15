@@ -1,0 +1,202 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "https://w3id.org/mouseworld/platform", "http://www.w3.org/2000/01/rdf-schema", "http://www.owl-ontologies.com/mw", "http://www.w3.org/2001/XMLSchema", "https://w3id.org/mouseworld/infra" ],
+    "title" : {
+      "undefined" : "The Mouseworld Ontology – Infra"
+    },
+    "iri" : "https://w3id.org/mouseworld/infra#",
+    "version" : "1.0.0",
+    "author" : [ "Ignacio Dominguez Martinez-Casanueva" ],
+    "description" : {
+      "undefined" : "MW Ontology module that represents infrastructure details of the digital twin."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/rdflicense/APACHE2.0",
+        "type" : "iri"
+      } ],
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "https://w3id.org/mouseworld/infra",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Ignacio Dominguez Martinez-Casanueva",
+        "type" : "label"
+      } ],
+      "createdWith" : [ {
+        "identifier" : "createdWith",
+        "language" : "undefined",
+        "value" : "https://chowlk.linkeddata.es/",
+        "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Lucia Cabanillas Rodriguez",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Javier Nuñez Fuente",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Yenny Moreno Meneses",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-02-19",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "mw-infra",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "https://github.com/candil-data-fabric",
+        "type" : "iri"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/mouseworld/infra#",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "codeRepository" : [ {
+        "identifier" : "codeRepository",
+        "language" : "undefined",
+        "value" : "https://github.com/candil-data-fabric/mouseworld-ontology",
+        "type" : "label"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "The Mouseworld Ontology – Infra",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "1",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "4",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/mouseworld/infra#DockerImage",
+    "baseIri" : "https://w3id.org/mouseworld/infra",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DockerImage",
+      "undefined" : "Docker Image"
+    },
+    "id" : "2"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "3",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "1",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "4",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "https://w3id.org/mouseworld/platform#OperatingSystem",
+    "baseIri" : "https://w3id.org/mouseworld/platform",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OperatingSystem",
+      "undefined" : "Operating System"
+    },
+    "attributes" : [ "external" ],
+    "id" : "5"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "6",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "http://www.owl-ontologies.com/mw#destinationNetwork",
+    "baseIri" : "http://www.owl-ontologies.com/mw",
+    "range" : "1",
+    "label" : {
+      "IRI-based" : "destinationNetwork",
+      "undefined" : "destination network"
+    },
+    "domain" : "1",
+    "attributes" : [ "external", "object" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/infra#dockerImage",
+    "baseIri" : "https://w3id.org/mouseworld/infra",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "dockerImage",
+      "undefined" : "docker image"
+    },
+    "domain" : "4",
+    "attributes" : [ "object" ],
+    "id" : "6"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/infra#imageUrl",
+    "baseIri" : "https://w3id.org/mouseworld/infra",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "imageUrl",
+      "undefined" : "image url"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "7"
+  } ]
+}
