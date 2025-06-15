@@ -1,0 +1,280 @@
+@prefix : <https://w3id.org/mouseworld/platform#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/mouseworld/platform#> .
+
+<https://w3id.org/mouseworld/platform#> rdf:type owl:Ontology ;
+                                         owl:versionIRI <https://w3id.org/mouseworld/routing> ;
+                                         <http://purl.org/dc/terms/contributor> "Javier Nuñez Fuente" ,
+                                                                                "Lucia Cabanillas Rodriguez" ,
+                                                                                "Yenny Moreno Meneses" ;
+                                         <http://purl.org/dc/terms/created> "2025-02-19"^^xsd:date ;
+                                         <http://purl.org/dc/terms/creator> "Ignacio Dominguez Martinez-Casanueva" ;
+                                         <http://purl.org/dc/terms/description> "MW Ontology module that represents network routing details of the digital twin." ;
+                                         <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/APACHE2.0> ;
+                                         <http://purl.org/dc/terms/publisher> <https://github.com/candil-data-fabric> ;
+                                         <http://purl.org/dc/terms/title> "The Mouseworld Ontology – Routing" ;
+                                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "mw-rt" ;
+                                         <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/mouseworld/routing#> ;
+                                         <http://schema.org/codeRepository> "https://github.com/candil-data-fabric/mouseworld-ontology"^^xsd:anyURI ;
+                                         owl:priorVersion <https://w3id.org/mouseworld/routing> ;
+                                         owl:versionInfo "1.0.0" ;
+                                         <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/codeRepository
+<http://schema.org/codeRepository> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#priorVersion
+owl:priorVersion rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/mouseworld/routing#assignedNetwork
+<https://w3id.org/mouseworld/routing#assignedNetwork> rdf:type owl:ObjectProperty ;
+                                                      rdfs:domain <https://w3id.org/mouseworld/routing#OspfConfiguration> ;
+                                                      rdfs:range <https://w3id.org/mouseworld/routing#IpNetwork> ;
+                                                      rdfs:label "assigned network" .
+
+
+###  https://w3id.org/mouseworld/routing#belongsToNetwork
+<https://w3id.org/mouseworld/routing#belongsToNetwork> rdf:type owl:ObjectProperty ;
+                                                       rdfs:domain <https://w3id.org/mouseworld/routing#IpAddress> ;
+                                                       rdfs:range <https://w3id.org/mouseworld/routing#IpNetwork> ;
+                                                       rdfs:label "belongs to network" .
+
+
+###  https://w3id.org/mouseworld/routing#destinationNetwork
+<https://w3id.org/mouseworld/routing#destinationNetwork> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <https://w3id.org/mouseworld/routing#DefaultStaticRoute> ,
+                                                                     <https://w3id.org/mouseworld/routing#StaticRoute> ;
+                                                         rdfs:range <https://w3id.org/mouseworld/routing#IpNetwork> ;
+                                                         rdfs:label "destination network" .
+
+
+###  https://w3id.org/mouseworld/routing#ipAddress
+<https://w3id.org/mouseworld/routing#ipAddress> rdf:type owl:ObjectProperty ;
+                                                rdfs:domain <https://w3id.org/mouseworld/routing#IpInterface> ;
+                                                rdfs:range <https://w3id.org/mouseworld/routing#IpAddress> ;
+                                                rdfs:label "ip address" .
+
+
+###  https://w3id.org/mouseworld/routing#nextHop
+<https://w3id.org/mouseworld/routing#nextHop> rdf:type owl:ObjectProperty ;
+                                              rdfs:domain <https://w3id.org/mouseworld/routing#StaticRoute> ;
+                                              rdfs:range <https://w3id.org/mouseworld/routing#IpAddress> ;
+                                              rdfs:label "next hop" .
+
+
+###  https://w3id.org/mouseworld/routing#ospfArea
+<https://w3id.org/mouseworld/routing#ospfArea> rdf:type owl:ObjectProperty ;
+                                               rdfs:domain <https://w3id.org/mouseworld/routing#OspfConfiguration> ;
+                                               rdfs:range <https://w3id.org/mouseworld/routing#OspfArea> ;
+                                               rdfs:label "ospf area" .
+
+
+###  https://w3id.org/mouseworld/routing#ospfConfiguration
+<https://w3id.org/mouseworld/routing#ospfConfiguration> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <https://w3id.org/mouseworld/routing#OspfRouter> ;
+                                                        rdfs:range <https://w3id.org/mouseworld/routing#OspfConfiguration> ;
+                                                        rdfs:label "ospf configuration" .
+
+
+###  https://w3id.org/mouseworld/routing#ospfRouter
+<https://w3id.org/mouseworld/routing#ospfRouter> rdf:type owl:ObjectProperty ;
+                                                 rdfs:domain :Router ;
+                                                 rdfs:range <https://w3id.org/mouseworld/routing#OspfRouter> ;
+                                                 rdfs:label "ospf router" .
+
+
+###  https://w3id.org/mouseworld/routing#staticRoute
+<https://w3id.org/mouseworld/routing#staticRoute> rdf:type owl:ObjectProperty ;
+                                                  rdfs:domain <https://w3id.org/mouseworld/topology#Node> ;
+                                                  rdfs:range <https://w3id.org/mouseworld/routing#StaticRoute> ;
+                                                  rdfs:label "static route" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/mouseworld/routing#addressValue
+<https://w3id.org/mouseworld/routing#addressValue> rdf:type owl:DatatypeProperty ;
+                                                   rdfs:domain <https://w3id.org/mouseworld/routing#IpAddress> ,
+                                                               <https://w3id.org/mouseworld/routing#IpNetwork> ;
+                                                   rdfs:range xsd:string ;
+                                                   rdfs:label "address value" .
+
+
+###  https://w3id.org/mouseworld/routing#areaId
+<https://w3id.org/mouseworld/routing#areaId> rdf:type owl:DatatypeProperty ;
+                                             rdfs:domain <https://w3id.org/mouseworld/routing#OspfArea> ;
+                                             rdfs:range xsd:string ;
+                                             rdfs:label "area id" .
+
+
+###  https://w3id.org/mouseworld/routing#networkMask
+<https://w3id.org/mouseworld/routing#networkMask> rdf:type owl:DatatypeProperty ;
+                                                  rdfs:domain <https://w3id.org/mouseworld/routing#IpNetwork> ;
+                                                  rdfs:range xsd:string ;
+                                                  rdfs:label "network mask" .
+
+
+###  https://w3id.org/mouseworld/routing#networkPrefix
+<https://w3id.org/mouseworld/routing#networkPrefix> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <https://w3id.org/mouseworld/routing#IpNetwork> ;
+                                                    rdfs:range xsd:integer ;
+                                                    rdfs:label "network prefix" .
+
+
+###  https://w3id.org/mouseworld/routing#routerId
+<https://w3id.org/mouseworld/routing#routerId> rdf:type owl:DatatypeProperty ;
+                                               rdfs:domain <https://w3id.org/mouseworld/routing#OspfRouter> ;
+                                               rdfs:range rdfs:Literal ;
+                                               rdfs:label "router id" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/mouseworld/platform#Router
+:Router rdf:type owl:Class ;
+        rdfs:label "Router" .
+
+
+###  https://w3id.org/mouseworld/routing#DefaultStaticRoute
+<https://w3id.org/mouseworld/routing#DefaultStaticRoute> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <https://w3id.org/mouseworld/routing#StaticRoute> ,
+                                                                         [ rdf:type owl:Restriction ;
+                                                                           owl:onProperty <https://w3id.org/mouseworld/routing#destinationNetwork> ;
+                                                                           owl:hasValue <https://w3id.org/mouseworld/routing#DefaultIpNetwork>
+                                                                         ] ;
+                                                         rdfs:label "Default Static Route" .
+
+
+###  https://w3id.org/mouseworld/routing#IpAddress
+<https://w3id.org/mouseworld/routing#IpAddress> rdf:type owl:Class ;
+                                                rdfs:label "Ip Address" .
+
+
+###  https://w3id.org/mouseworld/routing#IpInterface
+<https://w3id.org/mouseworld/routing#IpInterface> rdf:type owl:Class ;
+                                                  rdfs:subClassOf <https://w3id.org/mouseworld/topology#Interface> ;
+                                                  rdfs:label "Ip Interface" .
+
+
+###  https://w3id.org/mouseworld/routing#IpNetwork
+<https://w3id.org/mouseworld/routing#IpNetwork> rdf:type owl:Class ;
+                                                rdfs:label "Ip Network" .
+
+
+###  https://w3id.org/mouseworld/routing#OspfArea
+<https://w3id.org/mouseworld/routing#OspfArea> rdf:type owl:Class ;
+                                               rdfs:label "Ospf Area" .
+
+
+###  https://w3id.org/mouseworld/routing#OspfConfiguration
+<https://w3id.org/mouseworld/routing#OspfConfiguration> rdf:type owl:Class ;
+                                                        rdfs:label "Ospf Configuration" .
+
+
+###  https://w3id.org/mouseworld/routing#OspfRouter
+<https://w3id.org/mouseworld/routing#OspfRouter> rdf:type owl:Class ;
+                                                 rdfs:label "Ospf Router" .
+
+
+###  https://w3id.org/mouseworld/routing#StaticRoute
+<https://w3id.org/mouseworld/routing#StaticRoute> rdf:type owl:Class ;
+                                                  rdfs:label "Static Route" .
+
+
+###  https://w3id.org/mouseworld/topology#Interface
+<https://w3id.org/mouseworld/topology#Interface> rdf:type owl:Class ;
+                                                 rdfs:label "Interface" .
+
+
+###  https://w3id.org/mouseworld/topology#Node
+<https://w3id.org/mouseworld/topology#Node> rdf:type owl:Class ;
+                                            rdfs:label "Node" .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  https://w3id.org/mouseworld/routing#DefaultIpNetwork
+<https://w3id.org/mouseworld/routing#DefaultIpNetwork> rdf:type owl:NamedIndividual ,
+                                                                <https://w3id.org/mouseworld/routing#IpNetwork> ;
+                                                       <https://w3id.org/mouseworld/routing#addressValue> "0.0.0.0" ;
+                                                       <https://w3id.org/mouseworld/routing#networkMask> "255.255.255.0" ;
+                                                       <https://w3id.org/mouseworld/routing#networkPrefix> 0 .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

@@ -1,0 +1,170 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix mw-pm: <https://w3id.org/mouseworld/platform#> .
+@prefix mw-rt: <https://w3id.org/mouseworld/routing#> .
+@prefix mw-topo: <https://w3id.org/mouseworld/topology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:contributor a owl:AnnotationProperty .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:publisher a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+schema1:codeRepository a owl:AnnotationProperty .
+
+owl:priorVersion a owl:AnnotationProperty .
+
+owl:versionIRI a owl:AnnotationProperty .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+mw-pm: a owl:Ontology ;
+    dcterms:contributor "Javier Nuñez Fuente",
+        "Lucia Cabanillas Rodriguez",
+        "Yenny Moreno Meneses" ;
+    dcterms:created "2025-02-19"^^xsd:date ;
+    dcterms:creator "Ignacio Dominguez Martinez-Casanueva" ;
+    dcterms:description "MW Ontology module that represents network routing details of the digital twin." ;
+    dcterms:license <http://purl.org/NET/rdflicense/APACHE2.0> ;
+    dcterms:publisher <https://github.com/candil-data-fabric> ;
+    dcterms:title "The Mouseworld Ontology – Routing" ;
+    vann:preferredNamespacePrefix "mw-rt" ;
+    vann:preferredNamespaceUri mw-rt: ;
+    schema1:codeRepository "https://github.com/candil-data-fabric/mouseworld-ontology"^^xsd:anyURI ;
+    owl:priorVersion <https://w3id.org/mouseworld/routing> ;
+    owl:versionIRI <https://w3id.org/mouseworld/routing> ;
+    owl:versionInfo "1.0.0" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+mw-rt:addressValue a owl:DatatypeProperty ;
+    rdfs:label "address value" ;
+    rdfs:domain mw-rt:IpAddress,
+        mw-rt:IpNetwork ;
+    rdfs:range xsd:string .
+
+mw-rt:areaId a owl:DatatypeProperty ;
+    rdfs:label "area id" ;
+    rdfs:domain mw-rt:OspfArea ;
+    rdfs:range xsd:string .
+
+mw-rt:assignedNetwork a owl:ObjectProperty ;
+    rdfs:label "assigned network" ;
+    rdfs:domain mw-rt:OspfConfiguration ;
+    rdfs:range mw-rt:IpNetwork .
+
+mw-rt:belongsToNetwork a owl:ObjectProperty ;
+    rdfs:label "belongs to network" ;
+    rdfs:domain mw-rt:IpAddress ;
+    rdfs:range mw-rt:IpNetwork .
+
+mw-rt:ipAddress a owl:ObjectProperty ;
+    rdfs:label "ip address" ;
+    rdfs:domain mw-rt:IpInterface ;
+    rdfs:range mw-rt:IpAddress .
+
+mw-rt:networkMask a owl:DatatypeProperty ;
+    rdfs:label "network mask" ;
+    rdfs:domain mw-rt:IpNetwork ;
+    rdfs:range xsd:string .
+
+mw-rt:networkPrefix a owl:DatatypeProperty ;
+    rdfs:label "network prefix" ;
+    rdfs:domain mw-rt:IpNetwork ;
+    rdfs:range xsd:integer .
+
+mw-rt:nextHop a owl:ObjectProperty ;
+    rdfs:label "next hop" ;
+    rdfs:domain mw-rt:StaticRoute ;
+    rdfs:range mw-rt:IpAddress .
+
+mw-rt:ospfArea a owl:ObjectProperty ;
+    rdfs:label "ospf area" ;
+    rdfs:domain mw-rt:OspfConfiguration ;
+    rdfs:range mw-rt:OspfArea .
+
+mw-rt:ospfConfiguration a owl:ObjectProperty ;
+    rdfs:label "ospf configuration" ;
+    rdfs:domain mw-rt:OspfRouter ;
+    rdfs:range mw-rt:OspfConfiguration .
+
+mw-rt:ospfRouter a owl:ObjectProperty ;
+    rdfs:label "ospf router" ;
+    rdfs:domain mw-pm:Router ;
+    rdfs:range mw-rt:OspfRouter .
+
+mw-rt:routerId a owl:DatatypeProperty ;
+    rdfs:label "router id" ;
+    rdfs:domain mw-rt:OspfRouter ;
+    rdfs:range rdfs:Literal .
+
+mw-rt:staticRoute a owl:ObjectProperty ;
+    rdfs:label "static route" ;
+    rdfs:domain mw-topo:Node ;
+    rdfs:range mw-rt:StaticRoute .
+
+mw-pm:Router a owl:Class ;
+    rdfs:label "Router" .
+
+mw-rt:DefaultIpNetwork a owl:NamedIndividual,
+        mw-rt:IpNetwork ;
+    mw-rt:addressValue "0.0.0.0" ;
+    mw-rt:networkMask "255.255.255.0" ;
+    mw-rt:networkPrefix 0 .
+
+mw-rt:DefaultStaticRoute a owl:Class ;
+    rdfs:label "Default Static Route" ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:hasValue mw-rt:DefaultIpNetwork ;
+            owl:onProperty mw-rt:destinationNetwork ],
+        mw-rt:StaticRoute .
+
+mw-rt:IpInterface a owl:Class ;
+    rdfs:label "Ip Interface" ;
+    rdfs:subClassOf mw-topo:Interface .
+
+mw-rt:destinationNetwork a owl:ObjectProperty ;
+    rdfs:label "destination network" ;
+    rdfs:domain mw-rt:DefaultStaticRoute,
+        mw-rt:StaticRoute ;
+    rdfs:range mw-rt:IpNetwork .
+
+mw-topo:Interface a owl:Class ;
+    rdfs:label "Interface" .
+
+mw-topo:Node a owl:Class ;
+    rdfs:label "Node" .
+
+mw-rt:OspfArea a owl:Class ;
+    rdfs:label "Ospf Area" .
+
+mw-rt:OspfConfiguration a owl:Class ;
+    rdfs:label "Ospf Configuration" .
+
+mw-rt:OspfRouter a owl:Class ;
+    rdfs:label "Ospf Router" .
+
+mw-rt:IpAddress a owl:Class ;
+    rdfs:label "Ip Address" .
+
+mw-rt:StaticRoute a owl:Class ;
+    rdfs:label "Static Route" .
+
+mw-rt:IpNetwork a owl:Class ;
+    rdfs:label "Ip Network" .

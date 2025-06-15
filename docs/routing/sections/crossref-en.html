@@ -1,0 +1,555 @@
+<h2 id="crossreference" class="list">Cross-reference for The Mouseworld Ontology – Routing classes, object properties and data properties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by The Mouseworld Ontology – Routing.
+<div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="classes">
+ <h3 id="classes-headline" class="list">Classes</h3>
+ <ul class="hlist">
+  <li><a href="#DefaultStaticRoute" title="https://w3id.org/mouseworld/routing#DefaultStaticRoute">Default Static Route</a></li>
+  <li><a href="#https://w3id.org/mouseworld/topology#Interface" title="https://w3id.org/mouseworld/topology#Interface">Interface</a></li>
+  <li><a href="#IpAddress" title="https://w3id.org/mouseworld/routing#IpAddress">Ip Address</a></li>
+  <li><a href="#IpInterface" title="https://w3id.org/mouseworld/routing#IpInterface">Ip Interface</a></li>
+  <li><a href="#IpNetwork" title="https://w3id.org/mouseworld/routing#IpNetwork">Ip Network</a></li>
+  <li><a href="#https://w3id.org/mouseworld/topology#Node" title="https://w3id.org/mouseworld/topology#Node">Node</a></li>
+  <li><a href="#OspfArea" title="https://w3id.org/mouseworld/routing#OspfArea">Ospf Area</a></li>
+  <li><a href="#OspfConfiguration" title="https://w3id.org/mouseworld/routing#OspfConfiguration">Ospf Configuration</a></li>
+  <li><a href="#OspfRouter" title="https://w3id.org/mouseworld/routing#OspfRouter">Ospf Router</a></li>
+  <li><a href="#https://w3id.org/mouseworld/platform#Router" title="https://w3id.org/mouseworld/platform#Router">Router</a></li>
+  <li><a href="#StaticRoute" title="https://w3id.org/mouseworld/routing#StaticRoute">Static Route</a></li>
+ </ul>
+ <div class="entity" id="DefaultStaticRoute">
+  <h3>Default Static Route<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#DefaultStaticRoute</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#StaticRoute" title="https://w3id.org/mouseworld/routing#StaticRoute">Static Route</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#destinationNetwork" title="https://w3id.org/mouseworld/routing#destinationNetwork">destination network</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/mouseworld/topology#Interface">
+  <h3>Interface<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/topology#Interface</p>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#IpInterface" title="https://w3id.org/mouseworld/routing#IpInterface">Ip Interface</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="IpAddress">
+  <h3>Ip Address<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#IpAddress</p>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#addressValue" title="https://w3id.org/mouseworld/routing#addressValue">address value</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#belongsToNetwork" title="https://w3id.org/mouseworld/routing#belongsToNetwork">belongs to network</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#ipAddress" title="https://w3id.org/mouseworld/routing#ipAddress">ip address</a> <sup class="type-op" title="object property">op</sup>, <a href="#nextHop" title="https://w3id.org/mouseworld/routing#nextHop">next hop</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="IpInterface">
+  <h3>Ip Interface<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#IpInterface</p>
+  <dl class="description">
+   <dt>
+    has super-classes
+   </dt>
+   <dd>
+    <a href="#https://w3id.org/mouseworld/topology#Interface" title="https://w3id.org/mouseworld/topology#Interface">Interface</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#ipAddress" title="https://w3id.org/mouseworld/routing#ipAddress">ip address</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="IpNetwork">
+  <h3>Ip Network<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#IpNetwork</p>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#addressValue" title="https://w3id.org/mouseworld/routing#addressValue">address value</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#networkMask" title="https://w3id.org/mouseworld/routing#networkMask">network mask</a> <sup class="type-dp" title="data property">dp</sup>, <a href="#networkPrefix" title="https://w3id.org/mouseworld/routing#networkPrefix">network prefix</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#assignedNetwork" title="https://w3id.org/mouseworld/routing#assignedNetwork">assigned network</a> <sup class="type-op" title="object property">op</sup>, <a href="#belongsToNetwork" title="https://w3id.org/mouseworld/routing#belongsToNetwork">belongs to network</a> <sup class="type-op" title="object property">op</sup>, <a href="#destinationNetwork" title="https://w3id.org/mouseworld/routing#destinationNetwork">destination network</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    has members
+   </dt>
+   <dd>
+    <a href="#DefaultIpNetwork" title="https://w3id.org/mouseworld/routing#DefaultIpNetwork">Default Ip Network</a> <sup class="type-ni" title="named individual">ni</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/mouseworld/topology#Node">
+  <h3>Node<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/topology#Node</p>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#staticRoute" title="https://w3id.org/mouseworld/routing#staticRoute">static route</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="OspfArea">
+  <h3>Ospf Area<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#OspfArea</p>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#areaId" title="https://w3id.org/mouseworld/routing#areaId">area id</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#ospfArea" title="https://w3id.org/mouseworld/routing#ospfArea">ospf area</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="OspfConfiguration">
+  <h3>Ospf Configuration<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#OspfConfiguration</p>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#assignedNetwork" title="https://w3id.org/mouseworld/routing#assignedNetwork">assigned network</a> <sup class="type-op" title="object property">op</sup>, <a href="#ospfArea" title="https://w3id.org/mouseworld/routing#ospfArea">ospf area</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#ospfConfiguration" title="https://w3id.org/mouseworld/routing#ospfConfiguration">ospf configuration</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="OspfRouter">
+  <h3>Ospf Router<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#OspfRouter</p>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#ospfConfiguration" title="https://w3id.org/mouseworld/routing#ospfConfiguration">ospf configuration</a> <sup class="type-op" title="object property">op</sup>, <a href="#routerId" title="https://w3id.org/mouseworld/routing#routerId">router id</a> <sup class="type-dp" title="data property">dp</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#ospfRouter" title="https://w3id.org/mouseworld/routing#ospfRouter">ospf router</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="https://w3id.org/mouseworld/platform#Router">
+  <h3>Router<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/platform#Router</p>
+  <dl class="description">
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#ospfRouter" title="https://w3id.org/mouseworld/routing#ospfRouter">ospf router</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+ <div class="entity" id="StaticRoute">
+  <h3>Static Route<sup class="type-c" title="class">c</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#StaticRoute</p>
+  <dl class="description">
+   <dt>
+    has sub-classes
+   </dt>
+   <dd>
+    <a href="#DefaultStaticRoute" title="https://w3id.org/mouseworld/routing#DefaultStaticRoute">Default Static Route</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    is in domain of
+   </dt>
+   <dd>
+    <a href="#destinationNetwork" title="https://w3id.org/mouseworld/routing#destinationNetwork">destination network</a> <sup class="type-op" title="object property">op</sup>, <a href="#nextHop" title="https://w3id.org/mouseworld/routing#nextHop">next hop</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+   <dt>
+    is in range of
+   </dt>
+   <dd>
+    <a href="#staticRoute" title="https://w3id.org/mouseworld/routing#staticRoute">static route</a> <sup class="type-op" title="object property">op</sup>
+   </dd>
+  </dl>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="objectproperties">
+ <h3 id="properties" class="list">Object Properties</h3>
+ <ul class="hlist">
+  <li><a href="#assignedNetwork" title="https://w3id.org/mouseworld/routing#assignedNetwork">assigned network</a></li>
+  <li><a href="#belongsToNetwork" title="https://w3id.org/mouseworld/routing#belongsToNetwork">belongs to network</a></li>
+  <li><a href="#destinationNetwork" title="https://w3id.org/mouseworld/routing#destinationNetwork">destination network</a></li>
+  <li><a href="#ipAddress" title="https://w3id.org/mouseworld/routing#ipAddress">ip address</a></li>
+  <li><a href="#nextHop" title="https://w3id.org/mouseworld/routing#nextHop">next hop</a></li>
+  <li><a href="#ospfArea" title="https://w3id.org/mouseworld/routing#ospfArea">ospf area</a></li>
+  <li><a href="#ospfConfiguration" title="https://w3id.org/mouseworld/routing#ospfConfiguration">ospf configuration</a></li>
+  <li><a href="#ospfRouter" title="https://w3id.org/mouseworld/routing#ospfRouter">ospf router</a></li>
+  <li><a href="#staticRoute" title="https://w3id.org/mouseworld/routing#staticRoute">static route</a></li>
+ </ul>
+ <div class="entity" id="assignedNetwork">
+  <h3>assigned network<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#assignedNetwork</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#OspfConfiguration" title="https://w3id.org/mouseworld/routing#OspfConfiguration">Ospf Configuration</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#IpNetwork" title="https://w3id.org/mouseworld/routing#IpNetwork">Ip Network</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="belongsToNetwork">
+  <h3>belongs to network<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#belongsToNetwork</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#IpAddress" title="https://w3id.org/mouseworld/routing#IpAddress">Ip Address</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#IpNetwork" title="https://w3id.org/mouseworld/routing#IpNetwork">Ip Network</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="destinationNetwork">
+  <h3>destination network<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#destinationNetwork</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#DefaultStaticRoute" title="https://w3id.org/mouseworld/routing#DefaultStaticRoute">Default Static Route</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#StaticRoute" title="https://w3id.org/mouseworld/routing#StaticRoute">Static Route</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#IpNetwork" title="https://w3id.org/mouseworld/routing#IpNetwork">Ip Network</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ipAddress">
+  <h3>ip address<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#ipAddress</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#IpInterface" title="https://w3id.org/mouseworld/routing#IpInterface">Ip Interface</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#IpAddress" title="https://w3id.org/mouseworld/routing#IpAddress">Ip Address</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="nextHop">
+  <h3>next hop<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#nextHop</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#StaticRoute" title="https://w3id.org/mouseworld/routing#StaticRoute">Static Route</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#IpAddress" title="https://w3id.org/mouseworld/routing#IpAddress">Ip Address</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ospfArea">
+  <h3>ospf area<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#ospfArea</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#OspfConfiguration" title="https://w3id.org/mouseworld/routing#OspfConfiguration">Ospf Configuration</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#OspfArea" title="https://w3id.org/mouseworld/routing#OspfArea">Ospf Area</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ospfConfiguration">
+  <h3>ospf configuration<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#ospfConfiguration</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#OspfRouter" title="https://w3id.org/mouseworld/routing#OspfRouter">Ospf Router</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#OspfConfiguration" title="https://w3id.org/mouseworld/routing#OspfConfiguration">Ospf Configuration</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="ospfRouter">
+  <h3>ospf router<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#ospfRouter</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/mouseworld/platform#Router" title="https://w3id.org/mouseworld/platform#Router">Router</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#OspfRouter" title="https://w3id.org/mouseworld/routing#OspfRouter">Ospf Router</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="staticRoute">
+  <h3>static route<sup class="type-op" title="object property">op</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#staticRoute</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#https://w3id.org/mouseworld/topology#Node" title="https://w3id.org/mouseworld/topology#Node">Node</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="#StaticRoute" title="https://w3id.org/mouseworld/routing#StaticRoute">Static Route</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="dataproperties">
+ <h3 id="dataproperties-headline" class="list">Data Properties</h3>
+ <ul class="hlist">
+  <li><a href="#addressValue" title="https://w3id.org/mouseworld/routing#addressValue">address value</a></li>
+  <li><a href="#areaId" title="https://w3id.org/mouseworld/routing#areaId">area id</a></li>
+  <li><a href="#networkMask" title="https://w3id.org/mouseworld/routing#networkMask">network mask</a></li>
+  <li><a href="#networkPrefix" title="https://w3id.org/mouseworld/routing#networkPrefix">network prefix</a></li>
+  <li><a href="#routerId" title="https://w3id.org/mouseworld/routing#routerId">router id</a></li>
+ </ul>
+ <div class="entity" id="addressValue">
+  <h3>address value<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#addressValue</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#IpAddress" title="https://w3id.org/mouseworld/routing#IpAddress">Ip Address</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dd>
+     <a href="#IpNetwork" title="https://w3id.org/mouseworld/routing#IpNetwork">Ip Network</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="areaId">
+  <h3>area id<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#areaId</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#OspfArea" title="https://w3id.org/mouseworld/routing#OspfArea">Ospf Area</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="networkMask">
+  <h3>network mask<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#networkMask</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#IpNetwork" title="https://w3id.org/mouseworld/routing#IpNetwork">Ip Network</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#string" target="_blank" title="http://www.w3.org/2001/XMLSchema#string">string</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="networkPrefix">
+  <h3>network prefix<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#networkPrefix</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#IpNetwork" title="https://w3id.org/mouseworld/routing#IpNetwork">Ip Network</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+ <div class="entity" id="routerId">
+  <h3>router id<sup class="type-dp" title="data property">dp</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#dataproperties">Data Property ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#routerId</p>
+  <div class="description">
+   <dl>
+    <dt>
+     has domain
+    </dt>
+    <dd>
+     <a href="#OspfRouter" title="https://w3id.org/mouseworld/routing#OspfRouter">Ospf Router</a> <sup class="type-c" title="class">c</sup>
+    </dd>
+    <dt>
+     has range
+    </dt>
+    <dd>
+     <a href="http://www.w3.org/2000/01/rdf-schema#Literal" target="_blank" title="http://www.w3.org/2000/01/rdf-schema#Literal">Literal</a>
+    </dd>
+   </dl>
+  </div>
+ </div>
+</div><div xmlns:widoco="https://w3id.org/widoco/vocab#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" id="namedindividuals">
+ <h3 id="namedindividuals" class="list">Named Individuals</h3>
+ <ul class="hlist">
+  <li><a href="#DefaultIpNetwork" title="https://w3id.org/mouseworld/routing#DefaultIpNetwork"> <span>Default Ip Network</span> </a></li>
+ </ul>
+ <div class="entity" id="DefaultIpNetwork">
+  <h3>Default Ip Network<sup class="type-ni" title="named individual">ni</sup> <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#namedindividuals">Named Individual ToC</a> </span></h3>
+  <p><strong>IRI:</strong> https://w3id.org/mouseworld/routing#DefaultIpNetwork</p>
+  <dl class="description">
+   <dt>
+    belongs to
+   </dt>
+   <dd>
+    <a href="#IpNetwork" title="https://w3id.org/mouseworld/routing#IpNetwork">Ip Network</a> <sup class="type-c" title="class">c</sup>
+   </dd>
+   <dt>
+    has facts
+   </dt>
+   <dd>
+    <a href="#addressValue" title="https://w3id.org/mouseworld/routing#addressValue">address value</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"0.0.0.0"</span>
+   </dd>
+   <dd>
+    <a href="#networkMask" title="https://w3id.org/mouseworld/routing#networkMask">network mask</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"255.255.255.0"</span>
+   </dd>
+   <dd>
+    <a href="#networkPrefix" title="https://w3id.org/mouseworld/routing#networkPrefix">network prefix</a> <sup class="type-dp" title="data property">dp</sup> <span class="literal">"0"^^<a href="http://www.w3.org/2001/XMLSchema#integer" target="_blank" title="http://www.w3.org/2001/XMLSchema#integer">integer</a> </span>
+   </dd>
+  </dl>
+ </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals <br/>
+</div>
+</div>

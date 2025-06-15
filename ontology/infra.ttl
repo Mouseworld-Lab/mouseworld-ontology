@@ -1,0 +1,72 @@
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix mw: <http://www.owl-ontologies.com/mw#> .
+@prefix mw-infra: <https://w3id.org/mouseworld/infra#> .
+@prefix mw-pm: <https://w3id.org/mouseworld/platform#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema1: <http://schema.org/> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+dcterms:contributor a owl:AnnotationProperty .
+
+dcterms:created a owl:AnnotationProperty .
+
+dcterms:creator a owl:AnnotationProperty .
+
+dcterms:description a owl:AnnotationProperty .
+
+dcterms:license a owl:AnnotationProperty .
+
+dcterms:publisher a owl:AnnotationProperty .
+
+dcterms:title a owl:AnnotationProperty .
+
+vann:preferredNamespacePrefix a owl:AnnotationProperty .
+
+vann:preferredNamespaceUri a owl:AnnotationProperty .
+
+schema1:codeRepository a owl:AnnotationProperty .
+
+mw:destinationNetwork a owl:ObjectProperty ;
+    rdfs:label "destination network" .
+
+owl:priorVersion a owl:AnnotationProperty .
+
+owl:versionIRI a owl:AnnotationProperty .
+
+owl:versionInfo a owl:AnnotationProperty .
+
+mw-infra:dockerImage a owl:ObjectProperty ;
+    rdfs:label "docker image" ;
+    rdfs:range mw-infra:DockerImage .
+
+mw-infra:imageUrl a owl:DatatypeProperty ;
+    rdfs:label "image url" ;
+    rdfs:domain mw-infra:DockerImage ;
+    rdfs:range xsd:anyURI .
+
+mw-pm:OperatingSystem a owl:Class ;
+    rdfs:label "Operating System" .
+
+mw-infra: a owl:Ontology ;
+    dcterms:contributor "Javier Nuñez Fuente",
+        "Lucia Cabanillas Rodriguez",
+        "Yenny Moreno Meneses" ;
+    dcterms:created "2025-02-19"^^xsd:date ;
+    dcterms:creator "Ignacio Dominguez Martinez-Casanueva" ;
+    dcterms:description "MW Ontology module that represents infrastructure details of the digital twin." ;
+    dcterms:license <http://purl.org/NET/rdflicense/APACHE2.0> ;
+    dcterms:publisher <https://github.com/candil-data-fabric> ;
+    dcterms:title "The Mouseworld Ontology – Infra" ;
+    vann:preferredNamespacePrefix "mw-infra" ;
+    vann:preferredNamespaceUri mw-infra: ;
+    schema1:codeRepository "https://github.com/candil-data-fabric/mouseworld-ontology"^^xsd:anyURI ;
+    owl:priorVersion <https://w3id.org/mouseworld/infra> ;
+    owl:versionIRI <https://w3id.org/mouseworld/infra> ;
+    owl:versionInfo "1.0.0" ;
+    mod:createdWith <https://chowlk.linkeddata.es/> .
+
+mw-infra:DockerImage a owl:Class ;
+    rdfs:label "Docker Image" .

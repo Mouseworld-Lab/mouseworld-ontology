@@ -1,0 +1,195 @@
+@prefix : <https://w3id.org/mouseworld/platform#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://w3id.org/mouseworld/platform#> .
+
+<https://w3id.org/mouseworld/platform#> rdf:type owl:Ontology ;
+                                         owl:versionIRI <https://w3id.org/mouseworld/platform> ;
+                                         <http://purl.org/dc/terms/contributor> "Javier Nuñez Fuente" ,
+                                                                                "Lucia Cabanillas Rodriguez" ,
+                                                                                "Yenny Moreno Meneses" ;
+                                         <http://purl.org/dc/terms/created> "2025-02-19"^^xsd:date ;
+                                         <http://purl.org/dc/terms/creator> "Ignacio Dominguez Martinez-Casanueva" ;
+                                         <http://purl.org/dc/terms/description> "MW Ontology module that represents network platform details of the digital twin." ;
+                                         <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/APACHE2.0> ;
+                                         <http://purl.org/dc/terms/publisher> <https://github.com/candil-data-fabric> ;
+                                         <http://purl.org/dc/terms/title> "The Mouseworld Ontology – Platform" ;
+                                         <http://purl.org/vocab/vann/preferredNamespacePrefix> "mw-pm" ;
+                                         <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/mouseworld/platform#> ;
+                                         <http://schema.org/codeRepository> "https://github.com/candil-data-fabric/mouseworld-ontology"^^xsd:anyURI ;
+                                         owl:priorVersion <https://w3id.org/mouseworld/platform> ;
+                                         owl:versionInfo "1.0.0" ;
+                                         <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.org/codeRepository
+<http://schema.org/codeRepository> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#priorVersion
+owl:priorVersion rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionIRI
+owl:versionIRI rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2002/07/owl#versionInfo
+owl:versionInfo rdf:type owl:AnnotationProperty .
+
+
+###  https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://www.w3.org/2001/XMLSchema#date
+xsd:date rdf:type rdfs:Datatype .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  https://w3id.org/mouseworld/platform#operatingSystem
+:operatingSystem rdf:type owl:ObjectProperty ;
+                 rdfs:domain :Router ;
+                 rdfs:range :OperatingSystem ;
+                 rdfs:label "operating system" .
+
+
+###  https://w3id.org/mouseworld/platform#platform
+:platform rdf:type owl:ObjectProperty ;
+          rdfs:domain :Router ;
+          rdfs:range :Platform ;
+          rdfs:label "platform" .
+
+
+###  https://w3id.org/mouseworld/platform#supportsOperatingSystem
+:supportsOperatingSystem rdf:type owl:ObjectProperty ;
+                         rdfs:domain :Platform ;
+                         rdfs:range :OperatingSystem ;
+                         rdfs:label "supports operating system" .
+
+
+###  https://w3id.org/mouseworld/platform#vendor
+:vendor rdf:type owl:ObjectProperty ;
+        rdfs:range :Vendor ;
+        rdfs:label "vendor" .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  https://w3id.org/mouseworld/platform#hostname
+:hostname rdf:type owl:DatatypeProperty ;
+          rdfs:domain :Router ;
+          rdfs:range xsd:string ;
+          rdfs:label "hostname" .
+
+
+###  https://w3id.org/mouseworld/platform#osName
+:osName rdf:type owl:DatatypeProperty ;
+        rdfs:domain :OperatingSystem ;
+        rdfs:range xsd:string ;
+        rdfs:label "os name" .
+
+
+###  https://w3id.org/mouseworld/platform#osVersion
+:osVersion rdf:type owl:DatatypeProperty ;
+           rdfs:domain :OperatingSystem ;
+           rdfs:range xsd:string ;
+           rdfs:label "os version" .
+
+
+###  https://w3id.org/mouseworld/platform#platformName
+:platformName rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Platform ;
+              rdfs:range xsd:string ;
+              rdfs:label "platform name" .
+
+
+###  https://w3id.org/mouseworld/platform#vendorName
+:vendorName rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Vendor ;
+            rdfs:range xsd:string ;
+            rdfs:label "vendor name" .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://w3id.org/mouseworld/platform#OperatingSystem
+:OperatingSystem rdf:type owl:Class ;
+                 rdfs:label "Operating System" .
+
+
+###  https://w3id.org/mouseworld/platform#Platform
+:Platform rdf:type owl:Class ;
+          rdfs:label "Platform" .
+
+
+###  https://w3id.org/mouseworld/platform#Router
+:Router rdf:type owl:Class ;
+        rdfs:subClassOf <https://w3id.org/mouseworld/topology#Node> ;
+        rdfs:label "Router" .
+
+
+###  https://w3id.org/mouseworld/platform#Vendor
+:Vendor rdf:type owl:Class ;
+        rdfs:label "Vendor" .
+
+
+###  https://w3id.org/mouseworld/topology#Node
+<https://w3id.org/mouseworld/topology#Node> rdf:type owl:Class ;
+                                            rdfs:label "Node" .
+
+
+###  Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

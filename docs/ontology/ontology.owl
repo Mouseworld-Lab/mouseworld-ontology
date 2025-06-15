@@ -1,0 +1,867 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://w3id.org/candil/mouseworld#"
+     xml:base="https://w3id.org/candil/mouseworld"
+     xmlns:mod="https://w3id.org/mod#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:vann="http://purl.org/vocab/vann/"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:mouseworld="https://w3id.org/candil/mouseworld#">
+    <owl:Ontology rdf:about="https://w3id.org/candil/mouseworld#">
+        <owl:versionIRI rdf:resource="https://w3id.org/candil/mouseworld"/>
+        <terms:contributor>Javier Nuñez Fuente</terms:contributor>
+        <terms:contributor>Lucia Cabanillas Rodriguez</terms:contributor>
+        <terms:contributor>Yenny Moreno Meneses</terms:contributor>
+        <terms:creator>Ignacio Dominguez Martinez-Casanueva</terms:creator>
+        <terms:description>An ontology for modeling network digital twins</terms:description>
+        <terms:modified rdf:datatype="http://www.w3.org/2001/XMLSchema#date">2025-02-19</terms:modified>
+        <terms:title>Mouseworld Ontology</terms:title>
+        <vann:preferredNamespacePrefix>mw</vann:preferredNamespacePrefix>
+        <vann:preferredNamespaceUri rdf:resource="https://w3id.org/candil/mouseworld#"/>
+        <owl:priorVersion rdf:resource="https://w3id.org/candil/mouseworld"/>
+        <owl:versionInfo>0.10.0</owl:versionInfo>
+        <mod:createdWith rdf:resource="https://chowlk.linkeddata.es/"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://purl.org/dc/terms/contributor -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/creator -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/creator"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/description"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/modified -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/modified"/>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/terms/title"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespacePrefix -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespacePrefix"/>
+    
+
+
+    <!-- http://purl.org/vocab/vann/preferredNamespaceUri -->
+
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/vocab/vann/preferredNamespaceUri"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#priorVersion -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#priorVersion"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionIRI -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionIRI"/>
+    
+
+
+    <!-- http://www.w3.org/2002/07/owl#versionInfo -->
+
+
+    <owl:AnnotationProperty rdf:about="http://www.w3.org/2002/07/owl#versionInfo"/>
+    
+
+
+    <!-- https://w3id.org/mod#createdWith -->
+
+
+    <owl:AnnotationProperty rdf:about="https://w3id.org/mod#createdWith"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Datatypes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://www.w3.org/2001/XMLSchema#date -->
+
+
+    <rdfs:Datatype rdf:about="http://www.w3.org/2001/XMLSchema#date"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#assignedNetwork -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/candil/mouseworld#assignedNetwork">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#OspfConfiguration"/>
+        <rdfs:range rdf:resource="https://w3id.org/candil/mouseworld#IpNetwork"/>
+        <rdfs:label>assigned network</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#belongsToNetwork -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/candil/mouseworld#belongsToNetwork">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#IpAddress"/>
+        <rdfs:range rdf:resource="https://w3id.org/candil/mouseworld#IpNetwork"/>
+        <rdfs:label>belongs to network</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#connectsInterface -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/candil/mouseworld#connectsInterface">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#Link"/>
+        <rdfs:range rdf:resource="https://w3id.org/candil/mouseworld#Interface"/>
+        <rdfs:label>connects interface</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#connectsNode -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/candil/mouseworld#connectsNode">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#Link"/>
+        <rdfs:range rdf:resource="https://w3id.org/candil/mouseworld#Node"/>
+        <rdfs:label>connects node</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#destinationNetwork -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/candil/mouseworld#destinationNetwork">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#DefaultStaticRoute"/>
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#StaticRoute"/>
+        <rdfs:range rdf:resource="https://w3id.org/candil/mouseworld#IpNetwork"/>
+        <rdfs:label>destination network</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#dockerImage -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/candil/mouseworld#dockerImage">
+        <rdfs:range rdf:resource="https://w3id.org/candil/mouseworld#DockerImage"/>
+        <rdfs:label>docker image</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#interface -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/candil/mouseworld#interface">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#Node"/>
+        <rdfs:range rdf:resource="https://w3id.org/candil/mouseworld#Interface"/>
+        <rdfs:label>interface</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#ipAddress -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/candil/mouseworld#ipAddress">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#IpInterface"/>
+        <rdfs:range rdf:resource="https://w3id.org/candil/mouseworld#IpAddress"/>
+        <rdfs:label>ip address</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#link -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/candil/mouseworld#link">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#Topology"/>
+        <rdfs:range rdf:resource="https://w3id.org/candil/mouseworld#Link"/>
+        <rdfs:label>link</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#nextHop -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/candil/mouseworld#nextHop">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#StaticRoute"/>
+        <rdfs:range rdf:resource="https://w3id.org/candil/mouseworld#IpAddress"/>
+        <rdfs:label>next hop</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#node -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/candil/mouseworld#node">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#Topology"/>
+        <rdfs:range rdf:resource="https://w3id.org/candil/mouseworld#Node"/>
+        <rdfs:label>node</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#operatingSystem -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/candil/mouseworld#operatingSystem">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#Router"/>
+        <rdfs:range rdf:resource="https://w3id.org/candil/mouseworld#OperatingSystem"/>
+        <rdfs:label>operating system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#ospfArea -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/candil/mouseworld#ospfArea">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#OspfConfiguration"/>
+        <rdfs:range rdf:resource="https://w3id.org/candil/mouseworld#OspfArea"/>
+        <rdfs:label>ospf area</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#ospfConfiguration -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/candil/mouseworld#ospfConfiguration">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#OspfRouter"/>
+        <rdfs:range rdf:resource="https://w3id.org/candil/mouseworld#OspfConfiguration"/>
+        <rdfs:label>ospf configuration</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#ospfRouter -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/candil/mouseworld#ospfRouter">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#Router"/>
+        <rdfs:range rdf:resource="https://w3id.org/candil/mouseworld#OspfRouter"/>
+        <rdfs:label>ospf router</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#platform -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/candil/mouseworld#platform">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#Router"/>
+        <rdfs:range rdf:resource="https://w3id.org/candil/mouseworld#Platform"/>
+        <rdfs:label>platform</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#role -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/candil/mouseworld#role">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#CustomNode"/>
+        <rdfs:range rdf:resource="https://w3id.org/candil/mouseworld#Role"/>
+        <rdfs:label>role</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#staticRoute -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/candil/mouseworld#staticRoute">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#Node"/>
+        <rdfs:range rdf:resource="https://w3id.org/candil/mouseworld#StaticRoute"/>
+        <rdfs:label>static route</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#supportsOperatingSystem -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/candil/mouseworld#supportsOperatingSystem">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#Platform"/>
+        <rdfs:range rdf:resource="https://w3id.org/candil/mouseworld#OperatingSystem"/>
+        <rdfs:label>supports operating system</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#vendor -->
+
+
+    <owl:ObjectProperty rdf:about="https://w3id.org/candil/mouseworld#vendor">
+        <rdfs:range rdf:resource="https://w3id.org/candil/mouseworld#Vendor"/>
+        <rdfs:label>vendor</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#addressValue -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/candil/mouseworld#addressValue">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#IpAddress"/>
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#IpNetwork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>address value</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#areaId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/candil/mouseworld#areaId">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#OspfArea"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>area id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#hostname -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/candil/mouseworld#hostname">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#Router"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>hostname</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#imageUrl -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/candil/mouseworld#imageUrl">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#DockerImage"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+        <rdfs:label>image url</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#interfaceName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/candil/mouseworld#interfaceName">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#Interface"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>interface name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#networkMask -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/candil/mouseworld#networkMask">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#IpNetwork"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>network mask</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#networkPrefix -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/candil/mouseworld#networkPrefix">
+        <rdfs:label>network prefix</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#nodeId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/candil/mouseworld#nodeId">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#Node"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>node id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#osName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/candil/mouseworld#osName">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#OperatingSystem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>os name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#osVersion -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/candil/mouseworld#osVersion">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#OperatingSystem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>os version</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#platformName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/candil/mouseworld#platformName">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#Platform"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>platform name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#routerId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/candil/mouseworld#routerId">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#OspfRouter"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>router id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#topologyId -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/candil/mouseworld#topologyId">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#Topology"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+        <rdfs:label>topology id</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#vendorName -->
+
+
+    <owl:DatatypeProperty rdf:about="https://w3id.org/candil/mouseworld#vendorName">
+        <rdfs:domain rdf:resource="https://w3id.org/candil/mouseworld#Vendor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label>vendor name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#Client -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#Client">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/candil/mouseworld#Role"/>
+        <rdfs:label>Client</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#CustomNode -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#CustomNode">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/candil/mouseworld#Node"/>
+        <rdfs:label>Custom Node</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#DefaultStaticRoute -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#DefaultStaticRoute">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/candil/mouseworld#StaticRoute"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/candil/mouseworld#destinationNetwork"/>
+                <owl:hasValue rdf:resource="https://w3id.org/candil/mouseworld#DefaultIpNetwork"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Default Static Route</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#DockerImage -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#DockerImage">
+        <rdfs:label>Docker Image</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#HeavyHitterClient -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#HeavyHitterClient">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/candil/mouseworld#Client"/>
+        <rdfs:label>Heavy Hitter Client</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#HeavyHitterServer -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#HeavyHitterServer">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/candil/mouseworld#Server"/>
+        <rdfs:label>Heavy Hitter Server</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#Interface -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#Interface">
+        <rdfs:label>Interface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#IpAddress -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#IpAddress">
+        <rdfs:label>Ip Address</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#IpInterface -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#IpInterface">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/candil/mouseworld#Interface"/>
+        <rdfs:label>Ip Interface</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#IpNetwork -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#IpNetwork">
+        <rdfs:label>Ip Network</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#Link -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#Link">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/candil/mouseworld#connectsInterface"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/candil/mouseworld#connectsNode"/>
+                <owl:cardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:cardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Link</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#Node -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#Node">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://w3id.org/candil/mouseworld#interface"/>
+                <owl:minCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minCardinality>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:label>Node</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#OperatingSystem -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#OperatingSystem">
+        <rdfs:label>Operating System</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#OspfArea -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#OspfArea">
+        <rdfs:label>Ospf Area</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#OspfConfiguration -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#OspfConfiguration">
+        <rdfs:label>Ospf Configuration</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#OspfRouter -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#OspfRouter">
+        <rdfs:label>Ospf Router</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#Platform -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#Platform">
+        <rdfs:label>Platform</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#Role -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#Role">
+        <rdfs:label>Role</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#Router -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#Router">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/candil/mouseworld#Node"/>
+        <rdfs:label>Router</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#Server -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#Server">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/candil/mouseworld#Role"/>
+        <rdfs:label>Server</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#StaticRoute -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#StaticRoute">
+        <rdfs:label>Static Route</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#Topology -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#Topology">
+        <rdfs:label>Topology</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#Vendor -->
+
+
+    <owl:Class rdf:about="https://w3id.org/candil/mouseworld#Vendor">
+        <rdfs:label>Vendor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#BenignHeavyHitterClient -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/candil/mouseworld#BenignHeavyHitterClient">
+        <rdf:type rdf:resource="https://w3id.org/candil/mouseworld#HeavyHitterClient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#BenignHeavyHitterServer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/candil/mouseworld#BenignHeavyHitterServer">
+        <rdf:type rdf:resource="https://w3id.org/candil/mouseworld#HeavyHitterServer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#DDoSAttacker -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/candil/mouseworld#DDoSAttacker">
+        <rdf:type rdf:resource="https://w3id.org/candil/mouseworld#HeavyHitterClient"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#DDoSVictim -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/candil/mouseworld#DDoSVictim">
+        <rdf:type rdf:resource="https://w3id.org/candil/mouseworld#HeavyHitterServer"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#DefaultIpNetwork -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/candil/mouseworld#DefaultIpNetwork">
+        <rdf:type rdf:resource="https://w3id.org/candil/mouseworld#IpNetwork"/>
+        <addressValue>0.0.0.0</addressValue>
+        <networkMask>255.255.255.0</networkMask>
+        <networkPrefix>0</networkPrefix>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#StandardClient -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/candil/mouseworld#StandardClient">
+        <rdf:type rdf:resource="https://w3id.org/candil/mouseworld#Client"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/candil/mouseworld#StandardServer -->
+
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/candil/mouseworld#StandardServer">
+        <rdf:type rdf:resource="https://w3id.org/candil/mouseworld#Server"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+

@@ -1,0 +1,1156 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "https://w3id.org/candil/mouseworld", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "undefined" : "Mouseworld Ontology"
+    },
+    "iri" : "https://w3id.org/candil/mouseworld#",
+    "version" : "0.10.0",
+    "author" : [ "Ignacio Dominguez Martinez-Casanueva" ],
+    "description" : {
+      "undefined" : "An ontology for modeling network digital twins"
+    },
+    "other" : {
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "https://w3id.org/candil/mouseworld",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Ignacio Dominguez Martinez-Casanueva",
+        "type" : "label"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Lucia Cabanillas Rodriguez",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Yenny Moreno Meneses",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Javier Nuñez Fuente",
+        "type" : "label"
+      } ],
+      "createdWith" : [ {
+        "identifier" : "createdWith",
+        "language" : "undefined",
+        "value" : "https://chowlk.linkeddata.es/",
+        "type" : "iri"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "mw",
+        "type" : "label"
+      } ],
+      "modified" : [ {
+        "identifier" : "modified",
+        "language" : "undefined",
+        "value" : "2025-02-19",
+        "type" : "label"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "0.10.0",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/candil/mouseworld#",
+        "type" : "iri"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "Mouseworld Ontology",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "0",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "14",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "3",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "39",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:Class"
+  }, {
+    "id" : "33",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "47",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "49",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "53",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "52",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "56",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "20",
+    "type" : "owl:Class"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "66",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "9",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "41",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "59",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "31",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "68",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "69",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "8",
+    "type" : "owl:Class"
+  }, {
+    "id" : "45",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/candil/mouseworld#Topology",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Topology",
+      "undefined" : "Topology"
+    },
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#Role",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Role",
+      "undefined" : "Role"
+    },
+    "subClasses" : [ "5", "6" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#HeavyHitterServer",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HeavyHitterServer",
+      "undefined" : "Heavy Hitter Server"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/candil/mouseworld#DDoSVictim",
+      "baseIri" : "https://w3id.org/candil/mouseworld",
+      "labels" : {
+        "IRI-based" : "DDoSVictim"
+      }
+    }, {
+      "iri" : "https://w3id.org/candil/mouseworld#BenignHeavyHitterServer",
+      "baseIri" : "https://w3id.org/candil/mouseworld",
+      "labels" : {
+        "IRI-based" : "BenignHeavyHitterServer"
+      }
+    } ],
+    "id" : "13",
+    "superClasses" : [ "5" ]
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#Client",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Client",
+      "undefined" : "Client"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/candil/mouseworld#StandardClient",
+      "baseIri" : "https://w3id.org/candil/mouseworld",
+      "labels" : {
+        "IRI-based" : "StandardClient"
+      }
+    } ],
+    "subClasses" : [ "14" ],
+    "id" : "6",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#Link",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Link",
+      "undefined" : "Link"
+    },
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#DefaultStaticRoute",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DefaultStaticRoute",
+      "undefined" : "Default Static Route"
+    },
+    "id" : "16",
+    "superClasses" : [ "3" ]
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#HeavyHitterClient",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "HeavyHitterClient",
+      "undefined" : "Heavy Hitter Client"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/candil/mouseworld#DDoSAttacker",
+      "baseIri" : "https://w3id.org/candil/mouseworld",
+      "labels" : {
+        "IRI-based" : "DDoSAttacker"
+      }
+    }, {
+      "iri" : "https://w3id.org/candil/mouseworld#BenignHeavyHitterClient",
+      "baseIri" : "https://w3id.org/candil/mouseworld",
+      "labels" : {
+        "IRI-based" : "BenignHeavyHitterClient"
+      }
+    } ],
+    "id" : "14",
+    "superClasses" : [ "6" ]
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#Server",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Server",
+      "undefined" : "Server"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/candil/mouseworld#StandardServer",
+      "baseIri" : "https://w3id.org/candil/mouseworld",
+      "labels" : {
+        "IRI-based" : "StandardServer"
+      }
+    } ],
+    "subClasses" : [ "13" ],
+    "id" : "5",
+    "superClasses" : [ "4" ]
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#Node",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Node",
+      "undefined" : "Node"
+    },
+    "subClasses" : [ "19", "20" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#OspfRouter",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OspfRouter",
+      "undefined" : "Ospf Router"
+    },
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#StaticRoute",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StaticRoute",
+      "undefined" : "Static Route"
+    },
+    "subClasses" : [ "16" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#OperatingSystem",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OperatingSystem",
+      "undefined" : "Operating System"
+    },
+    "id" : "25"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#Platform",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Platform",
+      "undefined" : "Platform"
+    },
+    "id" : "39"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#OspfConfiguration",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OspfConfiguration",
+      "undefined" : "Ospf Configuration"
+    },
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#DockerImage",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DockerImage",
+      "undefined" : "Docker Image"
+    },
+    "id" : "42"
+  }, {
+    "instances" : 0,
+    "union" : [ "3", "16" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "33"
+  }, {
+    "instances" : 0,
+    "union" : [ "8", "45" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "44"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "47",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "49",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "id" : "53",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "52",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "56",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "28",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#CustomNode",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CustomNode",
+      "undefined" : "Custom Node"
+    },
+    "id" : "19",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#Router",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Router",
+      "undefined" : "Router"
+    },
+    "id" : "20",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "63",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#anyURI",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "66",
+    "label" : {
+      "IRI-based" : "anyURI"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "65",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "9",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "41",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "59",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#Interface",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Interface",
+      "undefined" : "Interface"
+    },
+    "subClasses" : [ "30" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "67",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "68",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "69",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#IpNetwork",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IpNetwork",
+      "undefined" : "Ip Network"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/candil/mouseworld#DefaultIpNetwork",
+      "baseIri" : "https://w3id.org/candil/mouseworld",
+      "labels" : {
+        "IRI-based" : "DefaultIpNetwork"
+      }
+    } ],
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#IpAddress",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IpAddress",
+      "undefined" : "Ip Address"
+    },
+    "id" : "45"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#Vendor",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vendor",
+      "undefined" : "Vendor"
+    },
+    "id" : "61"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#OspfArea",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OspfArea",
+      "undefined" : "Ospf Area"
+    },
+    "id" : "76"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#IpInterface",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IpInterface",
+      "undefined" : "Ip Interface"
+    },
+    "id" : "30",
+    "superClasses" : [ "31" ]
+  } ],
+  "property" : [ {
+    "id" : "1",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "7",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "10",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "17",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "34",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "36",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "37",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "40",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "43",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "46",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "48",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "50",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "51",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "54",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "55",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "57",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "58",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "62",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "64",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "70",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "71",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "72",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "73",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "74",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "75",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "77",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "79",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "80",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "81",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "82",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "83",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/candil/mouseworld#staticRoute",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "3",
+    "label" : {
+      "IRI-based" : "staticRoute",
+      "undefined" : "static route"
+    },
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "1"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#networkMask",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "9",
+    "label" : {
+      "IRI-based" : "networkMask",
+      "undefined" : "network mask"
+    },
+    "domain" : "8",
+    "attributes" : [ "datatype" ],
+    "id" : "7"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#routerId",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "routerId",
+      "undefined" : "router id"
+    },
+    "domain" : "11",
+    "attributes" : [ "datatype" ],
+    "id" : "10"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#assignedNetwork",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "assignedNetwork",
+      "undefined" : "assigned network"
+    },
+    "domain" : "18",
+    "attributes" : [ "object" ],
+    "id" : "17"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#ospfConfiguration",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "18",
+    "label" : {
+      "IRI-based" : "ospfConfiguration",
+      "undefined" : "ospf configuration"
+    },
+    "domain" : "11",
+    "attributes" : [ "object" ],
+    "id" : "21"
+  }, {
+    "range" : "3",
+    "domain" : "16",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "22"
+  }, {
+    "range" : "2",
+    "domain" : "20",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#osVersion",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "osVersion",
+      "undefined" : "os version"
+    },
+    "domain" : "25",
+    "attributes" : [ "datatype" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#topologyId",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "28",
+    "label" : {
+      "IRI-based" : "topologyId",
+      "undefined" : "topology id"
+    },
+    "domain" : "0",
+    "attributes" : [ "datatype" ],
+    "id" : "27"
+  }, {
+    "range" : "31",
+    "domain" : "30",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#destinationNetwork",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "destinationNetwork",
+      "undefined" : "destination network"
+    },
+    "domain" : "33",
+    "attributes" : [ "object" ],
+    "id" : "32"
+  }, {
+    "range" : "6",
+    "domain" : "14",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "34"
+  }, {
+    "range" : "4",
+    "domain" : "6",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "2",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "36"
+  }, {
+    "range" : "5",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "37"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#node",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "node",
+      "undefined" : "node"
+    },
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "38"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#nodeId",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "41",
+    "label" : {
+      "IRI-based" : "nodeId",
+      "undefined" : "node id"
+    },
+    "domain" : "2",
+    "attributes" : [ "datatype" ],
+    "id" : "40"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#role",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "role",
+      "undefined" : "role"
+    },
+    "domain" : "19",
+    "attributes" : [ "object" ],
+    "id" : "43"
+  }, {
+    "range" : "4",
+    "domain" : "5",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "46"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#interface",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "interface",
+      "undefined" : "interface"
+    },
+    "minCardinality" : "1",
+    "domain" : "2",
+    "attributes" : [ "object" ],
+    "id" : "48"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#operatingSystem",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "operatingSystem",
+      "undefined" : "operating system"
+    },
+    "domain" : "20",
+    "attributes" : [ "object" ],
+    "id" : "50"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#networkPrefix",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "53",
+    "label" : {
+      "IRI-based" : "networkPrefix",
+      "undefined" : "network prefix"
+    },
+    "domain" : "52",
+    "attributes" : [ "datatype" ],
+    "id" : "51"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#link",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "link",
+      "undefined" : "link"
+    },
+    "domain" : "0",
+    "attributes" : [ "object" ],
+    "id" : "54"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#ipAddress",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "ipAddress",
+      "undefined" : "ip address"
+    },
+    "domain" : "30",
+    "attributes" : [ "object" ],
+    "id" : "55"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#platform",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "39",
+    "label" : {
+      "IRI-based" : "platform",
+      "undefined" : "platform"
+    },
+    "domain" : "20",
+    "attributes" : [ "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#osName",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "59",
+    "label" : {
+      "IRI-based" : "osName",
+      "undefined" : "os name"
+    },
+    "domain" : "25",
+    "attributes" : [ "datatype" ],
+    "id" : "58"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#vendor",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "vendor",
+      "undefined" : "vendor"
+    },
+    "domain" : "49",
+    "attributes" : [ "object" ],
+    "id" : "60"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#ospfRouter",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "11",
+    "label" : {
+      "IRI-based" : "ospfRouter",
+      "undefined" : "ospf router"
+    },
+    "domain" : "20",
+    "attributes" : [ "object" ],
+    "id" : "62"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#interfaceName",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "65",
+    "label" : {
+      "IRI-based" : "interfaceName",
+      "undefined" : "interface name"
+    },
+    "domain" : "31",
+    "attributes" : [ "datatype" ],
+    "id" : "64"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#vendorName",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "56",
+    "label" : {
+      "IRI-based" : "vendorName",
+      "undefined" : "vendor name"
+    },
+    "domain" : "61",
+    "attributes" : [ "datatype" ],
+    "id" : "70"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#addressValue",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "addressValue",
+      "undefined" : "address value"
+    },
+    "domain" : "44",
+    "attributes" : [ "datatype" ],
+    "id" : "71"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#hostname",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "63",
+    "label" : {
+      "IRI-based" : "hostname",
+      "undefined" : "hostname"
+    },
+    "domain" : "20",
+    "attributes" : [ "datatype" ],
+    "id" : "72"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#supportsOperatingSystem",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "supportsOperatingSystem",
+      "undefined" : "supports operating system"
+    },
+    "domain" : "39",
+    "attributes" : [ "object" ],
+    "id" : "73"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#belongsToNetwork",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "8",
+    "label" : {
+      "IRI-based" : "belongsToNetwork",
+      "undefined" : "belongs to network"
+    },
+    "domain" : "45",
+    "attributes" : [ "object" ],
+    "id" : "74"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#areaId",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "69",
+    "label" : {
+      "IRI-based" : "areaId",
+      "undefined" : "area id"
+    },
+    "domain" : "76",
+    "attributes" : [ "datatype" ],
+    "id" : "75"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#imageUrl",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "66",
+    "label" : {
+      "IRI-based" : "imageUrl",
+      "undefined" : "image url"
+    },
+    "domain" : "42",
+    "attributes" : [ "datatype" ],
+    "id" : "77"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#connectsNode",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "connectsNode",
+      "undefined" : "connects node"
+    },
+    "cardinality" : "2",
+    "domain" : "15",
+    "attributes" : [ "object" ],
+    "id" : "78"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#connectsInterface",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "31",
+    "label" : {
+      "IRI-based" : "connectsInterface",
+      "undefined" : "connects interface"
+    },
+    "cardinality" : "2",
+    "domain" : "15",
+    "attributes" : [ "object" ],
+    "id" : "79"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#platformName",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "67",
+    "label" : {
+      "IRI-based" : "platformName",
+      "undefined" : "platform name"
+    },
+    "domain" : "39",
+    "attributes" : [ "datatype" ],
+    "id" : "80"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#ospfArea",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "76",
+    "label" : {
+      "IRI-based" : "ospfArea",
+      "undefined" : "ospf area"
+    },
+    "domain" : "18",
+    "attributes" : [ "object" ],
+    "id" : "81"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#nextHop",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "45",
+    "label" : {
+      "IRI-based" : "nextHop",
+      "undefined" : "next hop"
+    },
+    "domain" : "3",
+    "attributes" : [ "object" ],
+    "id" : "82"
+  }, {
+    "iri" : "https://w3id.org/candil/mouseworld#dockerImage",
+    "baseIri" : "https://w3id.org/candil/mouseworld",
+    "range" : "42",
+    "label" : {
+      "IRI-based" : "dockerImage",
+      "undefined" : "docker image"
+    },
+    "domain" : "47",
+    "attributes" : [ "object" ],
+    "id" : "83"
+  } ]
+}

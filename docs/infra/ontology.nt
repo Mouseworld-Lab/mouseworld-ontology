@@ -1,0 +1,131 @@
+<https://w3id.org/mouseworld/infra#> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Ontology> .
+<https://w3id.org/mouseworld/infra#> <http://www.w3.org/2002/07/owl#versionIRI> <https://w3id.org/mouseworld/infra> .
+<https://w3id.org/mouseworld/infra#> <http://purl.org/dc/terms/contributor> "Javier Nuñez Fuente" .
+<https://w3id.org/mouseworld/infra#> <http://purl.org/dc/terms/contributor> "Lucia Cabanillas Rodriguez" .
+<https://w3id.org/mouseworld/infra#> <http://purl.org/dc/terms/contributor> "Yenny Moreno Meneses" .
+<https://w3id.org/mouseworld/infra#> <http://purl.org/dc/terms/created> "2025-02-19"^^<http://www.w3.org/2001/XMLSchema#date> .
+<https://w3id.org/mouseworld/infra#> <http://purl.org/dc/terms/creator> "Ignacio Dominguez Martinez-Casanueva" .
+<https://w3id.org/mouseworld/infra#> <http://purl.org/dc/terms/description> "MW Ontology module that represents infrastructure details of the digital twin." .
+<https://w3id.org/mouseworld/infra#> <http://purl.org/dc/terms/license> <http://purl.org/NET/rdflicense/APACHE2.0> .
+<https://w3id.org/mouseworld/infra#> <http://purl.org/dc/terms/publisher> <https://github.com/candil-data-fabric> .
+<https://w3id.org/mouseworld/infra#> <http://purl.org/dc/terms/title> "The Mouseworld Ontology – Infra" .
+<https://w3id.org/mouseworld/infra#> <http://purl.org/vocab/vann/preferredNamespacePrefix> "mw-infra" .
+<https://w3id.org/mouseworld/infra#> <http://purl.org/vocab/vann/preferredNamespaceUri> <https://w3id.org/mouseworld/infra#> .
+<https://w3id.org/mouseworld/infra#> <http://schema.org/codeRepository> "https://github.com/candil-data-fabric/mouseworld-ontology"^^<http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/mouseworld/infra#> <http://www.w3.org/2002/07/owl#priorVersion> <https://w3id.org/mouseworld/infra> .
+<https://w3id.org/mouseworld/infra#> <http://www.w3.org/2002/07/owl#versionInfo> "1.0.0" .
+<https://w3id.org/mouseworld/infra#> <https://w3id.org/mod#createdWith> <https://chowlk.linkeddata.es/> .
+# 
+# 
+# #################################################################
+# #
+# #    Annotation properties
+# #
+# #################################################################
+# 
+# 
+# http://purl.org/dc/terms/contributor
+<http://purl.org/dc/terms/contributor> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/description
+<http://purl.org/dc/terms/description> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/license
+<http://purl.org/dc/terms/license> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/publisher
+<http://purl.org/dc/terms/publisher> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/dc/terms/title
+<http://purl.org/dc/terms/title> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespacePrefix
+<http://purl.org/vocab/vann/preferredNamespacePrefix> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://purl.org/vocab/vann/preferredNamespaceUri
+<http://purl.org/vocab/vann/preferredNamespaceUri> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://schema.org/codeRepository
+<http://schema.org/codeRepository> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#priorVersion
+<http://www.w3.org/2002/07/owl#priorVersion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionIRI
+<http://www.w3.org/2002/07/owl#versionIRI> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# http://www.w3.org/2002/07/owl#versionInfo
+<http://www.w3.org/2002/07/owl#versionInfo> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# https://w3id.org/mod#createdWith
+<https://w3id.org/mod#createdWith> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#AnnotationProperty> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Datatypes
+# #
+# #################################################################
+# 
+# 
+# http://www.w3.org/2001/XMLSchema#date
+<http://www.w3.org/2001/XMLSchema#date> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Datatype> .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Object Properties
+# #
+# #################################################################
+# 
+# 
+# http://www.owl-ontologies.com/mw#destinationNetwork
+<http://www.owl-ontologies.com/mw#destinationNetwork> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<http://www.owl-ontologies.com/mw#destinationNetwork> <http://www.w3.org/2000/01/rdf-schema#label> "destination network" .
+# 
+# https://w3id.org/mouseworld/infra#dockerImage
+<https://w3id.org/mouseworld/infra#dockerImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#ObjectProperty> .
+<https://w3id.org/mouseworld/infra#dockerImage> <http://www.w3.org/2000/01/rdf-schema#range> <https://w3id.org/mouseworld/infra#DockerImage> .
+<https://w3id.org/mouseworld/infra#dockerImage> <http://www.w3.org/2000/01/rdf-schema#label> "docker image" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/mouseworld/infra#imageUrl
+<https://w3id.org/mouseworld/infra#imageUrl> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#DatatypeProperty> .
+<https://w3id.org/mouseworld/infra#imageUrl> <http://www.w3.org/2000/01/rdf-schema#domain> <https://w3id.org/mouseworld/infra#DockerImage> .
+<https://w3id.org/mouseworld/infra#imageUrl> <http://www.w3.org/2000/01/rdf-schema#range> <http://www.w3.org/2001/XMLSchema#anyURI> .
+<https://w3id.org/mouseworld/infra#imageUrl> <http://www.w3.org/2000/01/rdf-schema#label> "image url" .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# https://w3id.org/mouseworld/infra#DockerImage
+<https://w3id.org/mouseworld/infra#DockerImage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mouseworld/infra#DockerImage> <http://www.w3.org/2000/01/rdf-schema#label> "Docker Image" .
+# 
+# https://w3id.org/mouseworld/platform#OperatingSystem
+<https://w3id.org/mouseworld/platform#OperatingSystem> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<https://w3id.org/mouseworld/platform#OperatingSystem> <http://www.w3.org/2000/01/rdf-schema#label> "Operating System" .
+# 
+# Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/

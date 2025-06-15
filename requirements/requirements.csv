@@ -1,0 +1,31 @@
+Id,Domain,Competency Question/Fact
+F1,Topology,A node has at least one interface
+F2,Routing,A default route is a static route whose destination network is the IP network 0.0.0.0/0
+F3,Routing,An OSPF router instance is configured with one or more OSPF areas that are assigned to IP networks
+F4,Platform,An operating system has name and a version
+F5,Topology,"A link is bidirectional, connecting two interfaces of two nodes"
+CQ1,Topology,What are the links and nodes contained in a topology?
+CQ2,Topology,Which are the nodes that a link connect to?
+CQ3,Topology,What is the identifier of the topology?
+CQ4,Topology,What is the identifier of the node?
+CQ5,Topology,Which interfaces does a link connect to?
+CQ6,Topology,Which are the interfaces of a node?
+CQ7,Topology,What is the name of the interface?
+CQ8,Infra,What Docker image is executed by the node?
+CQ9,Platform,What is the hostname of the router?
+CQ10,Infra,What is the URL where the Docker image is available?
+CQ11,Platform,What is the platform of the router?
+CQ12,Platform,What is the operating system of the router?
+CQ13,Platform,Which are the operating systems supported by the platform?
+CQ14,Platform,Which is the vendor that manufactors a platform?
+CQ15,Platform,Which is the vendor that manufactors an operating system?
+CQ16,Infra,What is Docker image in which the operating system is packaged?
+CQ17,Routing,What is the IP address of an IP interface?
+CQ18,Routing,Which IP network does the IP address belong to?
+CQ19,Routing,What are the network address and the network mask of an IP network?
+CQ20,Routing,Which are the static routes configured for the router?
+CQ21,Routing,What is the next hop of the static route?
+CQ22,Routing,What is the destination network of the static route?
+CQ23,Routing,Does the router run an OSPF router instance?
+CQ24,Routing,What is the router Id of the OSPF router?
+CQ25,Routing,Which IP network is an OSPF area assigned to?

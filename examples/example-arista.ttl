@@ -1,0 +1,212 @@
+@prefix mw: <https://w3id.org/candil/mouseworld#> .
+@prefix mod: <https://w3id.org/mod#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vann: <http://purl.org/vocab/vann/> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@base <http://mouseworld.org/> .
+
+####################
+# Inventory
+####################
+
+<Vendor/Arista> a mw:Vendor ;
+    mw:vendorName "Arista" ;
+    mw:kneVendorName "ARISTA"
+.
+
+<Model/cEOS-Lab> a mw:Platform ;
+    mw:platformName "cEOSLab" ;
+    mw:knePlatformName "ceos" ;
+    mw:vendor <Vendor/Arista> ;
+    mw:supportsOperatingSystem <OperatingSystem/EOS-4.26.1F>
+.
+
+<OperatingSystem/EOS-4.26.1F> a mw:OperatingSystem ;
+    mw:osName "EOS" ;
+    mw:kneOsName "eos" ;
+    mw:osVersion "4.26.1F" ;
+    mw:vendor <Vendor/Arista> ;
+    mw:dockerImage <DockerImage/arista/ceos:4.26.1F>
+.
+
+<DockerImage/arista/ceos:4.26.1F> a mw:DockerImage ;
+    mw:imageUrl "arista/ceos:4.26.1F"
+.
+
+####################
+# Topology
+####################
+
+<Topology/frr01> a mw:Topology ;
+    mw:topologyId "ddos" ;
+    mw:node <Topology/frr01/Node/router1> ,
+            <Topology/frr01/Node/router2> ,
+            <Topology/frr01/Node/router3>
+    ;
+    mw:link <Topology/frr01/Link/router1/router2> ,
+            <Topology/frr01/Link/router1/router3> ,
+            <Topology/frr01/Link/router2/router3>
+    ;
+.
+
+<Topology/frr01/Link/router1/router2> a mw:Link ;
+    mw:connectsNode <Topology/frr01/Node/router1> ,
+                    <Topology/frr01/Node/router2> ;
+    mw:connectsInterface <Topology/frr01/Node/router1/Interface/eth1> ,
+                         <Topology/frr01/Node/router2/Interface/eth1>
+.
+
+<Topology/frr01/Link/router1/router3> a mw:Link ;
+    mw:connectsNode <Topology/frr01/Node/router1> ,
+                    <Topology/frr01/Node/router3> ;
+    mw:connectsInterface <Topology/frr01/Node/router1/Interface/eth2> ,
+                         <Topology/frr01/Node/router3/Interface/eth1>
+.
+
+<Topology/frr01/Link/router2/router3> a mw:Link ;
+    mw:connectsNode <Topology/frr01/Node/router2> ,
+                    <Topology/frr01/Node/router3> ;
+    mw:connectsInterface <Topology/frr01/Node/router2/Interface/eth2> ,
+                         <Topology/frr01/Node/router3/Interface/eth1>
+
+.
+
+
+<Topology/network> a mw:Topology ;
+    mw:topologyId "network" ;
+    mw:node <Node/ceos1>
+.
+
+<Node/ceos1> a mw:Router ;
+    mw:nodeId "ceos1" ;
+    mw:hostname "r1" ;
+    mw:model <Model/ceos> ;
+    mw:os <OperatingSystem/eos-4.26.1F> ;
+    mw:staticRoute <Node/ceos1/StaticRoute/Default> ;
+    mw:ospfRouter <Ospf/1.1.1.1> ;
+    mw:interface <Node/ceos1/Interface/eth1> ,
+                 <Node/ceos1/Interface/eth2> ,
+                 <Node/ceos1/Interface/eth3> ,
+                 <Node/ceos1/Interface/eth4>
+.
+
+<Node/ceos1/Interface/eth1> a mw:IpInterface ;
+    mw:interfaceName "Ethernet1" ;
+    mw:ipAddress <IpAddress/192.168.15.1>
+.
+
+<IpAddress/192.168.15.1> a mw:IpAddress ;
+    mw:addressValue "192.168.15.1" ;
+    mw:belongsToNetwork <IpNetwork/192.168.15.0/24>
+.
+
+<IpNetwork/192.168.15.0/24> a mw:IpNetwork ;
+    mw:addressValue "192.168.15.0" ;
+    mw:networkMask "255.255.255.0" ;
+    mw:networkPrefix "24"
+.
+
+<Node/ceos1/Interface/eth2> a mw:IpInterface ;
+    mw:interfaceName "Ethernet2" ;
+    mw:ipAddress <IpAddress/192.168.3.1>
+.
+
+<IpAddress/192.168.3.1> a mw:IpAddress ;
+    mw:addressValue "192.168.3.1" ;
+    mw:belongsToNetwork <IpNetwork/192.168.3.0/24>
+.
+
+<IpNetwork/192.168.3.0/24> a mw:IpNetwork ;
+    mw:networkAddress "192.168.3.0" ;
+    mw:networkMask "255.255.255.0" ;
+    mw:networkPrefix "24"
+.
+
+<Node/ceos1/Interface/eth3> a mw:IpInterface ;
+    mw:interfaceName "Ethernet3" ;
+    mw:ipAddress <IpAddress/192.168.4.1>
+.
+
+<IpAddress/192.168.4.1> a mw:IpAddress ;
+    mw:addressValue "192.168.4.1" ;
+    mw:belongsToNetwork <IpNetwork/192.168.4.0/24>
+.
+
+<IpNetwork/192.168.4.0/24> a mw:IpNetwork ;
+    mw:networkAddress "192.168.4.0" ;
+    mw:networkMask "255.255.255.0" ;
+    mw:networkPrefix "24"
+.
+
+<Node/ceos1/Interface/eth4> a mw:IpInterface ;
+    mw:interfaceName "Ethernet4" ;
+    mw:ipAddress <IpAddress/192.168.1.1>
+.
+
+<IpAddress/192.168.1.1> a mw:IpAddress ;
+    mw:addressValue "192.168.1.1" ;
+    mw:belongsToNetwork <IpNetwork/192.168.1.0/24>
+.
+
+<IpNetwork/192.168.1.0/24> a mw:IpNetwork ;
+    mw:addressValue "192.168.1.0" ;
+    mw:networkMask "255.255.255.0" ;
+    mw:networkPrefix "24"
+.
+
+# Individual (To be moved to mouseworld ontology)
+mw:DefaultIpNetwork a mw:IpNetwork ;
+    mw:addressValue "0.0.0.0" ;
+    mw:networkMask "0.0.0.0" ;
+    mw:networkPrefix "0"
+.
+
+<Node/ceos1/StaticRoute/Default> a mw:DefaultStaticRoute ;
+    mw:nextHop <IpAddress/192.168.15.2> ;
+    mw:destinationNetwork mw:DefaultIpNetwork
+.
+
+<IpAddress/192.168.15.2> a mw:IpAddress ;
+    mw:addressValue "192.168.15.2" ;
+    mw:belongsToNetwork <IpNetwork/192.168.15.0/24>
+.
+
+<OspfArea/0> a mw:OspfArea ;
+    mw:areaId "0"
+.
+
+<OspfArea/1> a mw:OspfArea ;
+    mw:areaId "1"
+.
+
+<Ospf/1.1.1.1> a mw:OspfRouter ;
+    mw:routerId "1.1.1.1" ;
+    mw:ospfConfiguration <Ospf/1.1.1.1/Network/192.168.1.0/24> ,
+                         <Ospf/1.1.1.1/Network/192.168.3.0/24> ,
+                         <Ospf/1.1.1.1/Network/192.168.4.0/24> ,
+                         <Ospf/1.1.1.1/Network/192.168.15.0/24>
+.
+
+<Ospf/1.1.1.1/Network/192.168.1.0/24> a mw:OspfConfiguration ;
+    mw:ospfArea <OspfArea/1> ;
+    mw:assignedNetwork <IpNetwork/192.168.1.0/24>
+.
+
+<Ospf/1.1.1.1/Network/192.168.3.0/24> a mw:OspfConfiguration ;
+    mw:ospfArea <OspfArea/1> ;
+    mw:assignedNetwork <IpNetwork/192.168.3.0/24>
+.
+
+<Ospf/1.1.1.1/Network/192.168.4.0/24> a mw:OspfConfiguration ;
+    mw:ospfArea <OspfArea/1> ;
+    mw:assignedNetwork <IpNetwork/192.168.4.0/24>
+.
+
+<Ospf/1.1.1.1/Network/192.168.15.0/24> a mw:OspfConfiguration ;
+    mw:ospfArea <OspfArea/0> ;
+    mw:assignedNetwork <IpNetwork/192.168.15.0/24>
+.

@@ -1,0 +1,537 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "undefined" ],
+    "baseIris" : [ "https://w3id.org/mouseworld/routing", "https://w3id.org/mouseworld/topology", "https://w3id.org/mouseworld/platform", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema" ],
+    "title" : {
+      "undefined" : "The Mouseworld Ontology – Routing"
+    },
+    "iri" : "https://w3id.org/mouseworld/platform#",
+    "version" : "1.0.0",
+    "author" : [ "Ignacio Dominguez Martinez-Casanueva" ],
+    "description" : {
+      "undefined" : "MW Ontology module that represents network routing details of the digital twin."
+    },
+    "other" : {
+      "license" : [ {
+        "identifier" : "license",
+        "language" : "undefined",
+        "value" : "http://purl.org/NET/rdflicense/APACHE2.0",
+        "type" : "iri"
+      } ],
+      "priorVersion" : [ {
+        "identifier" : "priorVersion",
+        "language" : "undefined",
+        "value" : "https://w3id.org/mouseworld/routing",
+        "type" : "iri"
+      } ],
+      "creator" : [ {
+        "identifier" : "creator",
+        "language" : "undefined",
+        "value" : "Ignacio Dominguez Martinez-Casanueva",
+        "type" : "label"
+      } ],
+      "createdWith" : [ {
+        "identifier" : "createdWith",
+        "language" : "undefined",
+        "value" : "https://chowlk.linkeddata.es/",
+        "type" : "iri"
+      } ],
+      "contributor" : [ {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Yenny Moreno Meneses",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Lucia Cabanillas Rodriguez",
+        "type" : "label"
+      }, {
+        "identifier" : "contributor",
+        "language" : "undefined",
+        "value" : "Javier Nuñez Fuente",
+        "type" : "label"
+      } ],
+      "created" : [ {
+        "identifier" : "created",
+        "language" : "undefined",
+        "value" : "2025-02-19",
+        "type" : "label"
+      } ],
+      "preferredNamespacePrefix" : [ {
+        "identifier" : "preferredNamespacePrefix",
+        "language" : "undefined",
+        "value" : "mw-rt",
+        "type" : "label"
+      } ],
+      "publisher" : [ {
+        "identifier" : "publisher",
+        "language" : "undefined",
+        "value" : "https://github.com/candil-data-fabric",
+        "type" : "iri"
+      } ],
+      "versionInfo" : [ {
+        "identifier" : "versionInfo",
+        "language" : "undefined",
+        "value" : "1.0.0",
+        "type" : "label"
+      } ],
+      "codeRepository" : [ {
+        "identifier" : "codeRepository",
+        "language" : "undefined",
+        "value" : "https://github.com/candil-data-fabric/mouseworld-ontology",
+        "type" : "label"
+      } ],
+      "preferredNamespaceUri" : [ {
+        "identifier" : "preferredNamespaceUri",
+        "language" : "undefined",
+        "value" : "https://w3id.org/mouseworld/routing#",
+        "type" : "iri"
+      } ],
+      "title" : [ {
+        "identifier" : "title",
+        "language" : "undefined",
+        "value" : "The Mouseworld Ontology – Routing",
+        "type" : "label"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "6",
+    "type" : "owl:Class"
+  }, {
+    "id" : "10",
+    "type" : "owl:Class"
+  }, {
+    "id" : "12",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "13",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:Literal"
+  }, {
+    "id" : "9",
+    "type" : "owl:Class"
+  }, {
+    "id" : "17",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:Datatype"
+  }, {
+    "id" : "4",
+    "type" : "owl:Class"
+  }, {
+    "id" : "5",
+    "type" : "owl:Class"
+  }, {
+    "id" : "24",
+    "type" : "owl:Class"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "7",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "https://w3id.org/mouseworld/routing#IpInterface",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IpInterface",
+      "undefined" : "Ip Interface"
+    },
+    "attributes" : [ "external" ],
+    "id" : "6",
+    "superClasses" : [ "7" ]
+  }, {
+    "iri" : "https://w3id.org/mouseworld/topology#Node",
+    "baseIri" : "https://w3id.org/mouseworld/topology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Node",
+      "undefined" : "Node"
+    },
+    "attributes" : [ "external" ],
+    "id" : "10"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "12",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#integer",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "13",
+    "label" : {
+      "IRI-based" : "integer"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2000/01/rdf-schema#Literal",
+    "baseIri" : "http://www.w3.org/2000/01/rdf-schema",
+    "id" : "14",
+    "label" : {
+      "IRI-based" : "Literal",
+      "undefined" : "Literal"
+    }
+  }, {
+    "instances" : 0,
+    "union" : [ "15", "16" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "9"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/routing#OspfArea",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OspfArea",
+      "undefined" : "Ospf Area"
+    },
+    "attributes" : [ "external" ],
+    "id" : "17"
+  }, {
+    "instances" : 0,
+    "union" : [ "4", "5" ],
+    "attributes" : [ "anonymous", "union" ],
+    "id" : "18"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/routing#OspfRouter",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OspfRouter",
+      "undefined" : "Ospf Router"
+    },
+    "attributes" : [ "external" ],
+    "id" : "2"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/routing#StaticRoute",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "StaticRoute",
+      "undefined" : "Static Route"
+    },
+    "subClasses" : [ "16" ],
+    "attributes" : [ "external" ],
+    "id" : "15"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/platform#Router",
+    "baseIri" : "https://w3id.org/mouseworld/platform",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Router",
+      "undefined" : "Router"
+    },
+    "id" : "1"
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "25",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2001/XMLSchema#string",
+    "baseIri" : "http://www.w3.org/2001/XMLSchema",
+    "id" : "26",
+    "label" : {
+      "IRI-based" : "string"
+    }
+  }, {
+    "iri" : "https://w3id.org/mouseworld/routing#IpAddress",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IpAddress",
+      "undefined" : "Ip Address"
+    },
+    "attributes" : [ "external" ],
+    "id" : "4"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/routing#IpNetwork",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IpNetwork",
+      "undefined" : "Ip Network"
+    },
+    "individuals" : [ {
+      "iri" : "https://w3id.org/mouseworld/routing#DefaultIpNetwork",
+      "baseIri" : "https://w3id.org/mouseworld/routing",
+      "labels" : {
+        "IRI-based" : "DefaultIpNetwork"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/routing#OspfConfiguration",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OspfConfiguration",
+      "undefined" : "Ospf Configuration"
+    },
+    "attributes" : [ "external" ],
+    "id" : "24"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/routing#DefaultStaticRoute",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DefaultStaticRoute",
+      "undefined" : "Default Static Route"
+    },
+    "attributes" : [ "external" ],
+    "id" : "16",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "https://w3id.org/mouseworld/topology#Interface",
+    "baseIri" : "https://w3id.org/mouseworld/topology",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Interface",
+      "undefined" : "Interface"
+    },
+    "subClasses" : [ "6" ],
+    "attributes" : [ "external" ],
+    "id" : "7"
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "3",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "8",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "11",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "19",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "20",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "22",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "23",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "27",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "28",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "29",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "30",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "31",
+    "type" : "owl:datatypeProperty"
+  }, {
+    "id" : "32",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  } ],
+  "propertyAttribute" : [ {
+    "iri" : "https://w3id.org/mouseworld/routing#ospfRouter",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "range" : "2",
+    "label" : {
+      "IRI-based" : "ospfRouter",
+      "undefined" : "ospf router"
+    },
+    "domain" : "1",
+    "attributes" : [ "object", "external" ],
+    "id" : "0"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/routing#belongsToNetwork",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "belongsToNetwork",
+      "undefined" : "belongs to network"
+    },
+    "domain" : "4",
+    "attributes" : [ "object", "external" ],
+    "id" : "3"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/routing#destinationNetwork",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "destinationNetwork",
+      "undefined" : "destination network"
+    },
+    "domain" : "9",
+    "attributes" : [ "object", "external" ],
+    "id" : "8"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/routing#ipAddress",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "ipAddress",
+      "undefined" : "ip address"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "11"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/routing#networkMask",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "range" : "12",
+    "label" : {
+      "IRI-based" : "networkMask",
+      "undefined" : "network mask"
+    },
+    "domain" : "5",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "19"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/routing#staticRoute",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "range" : "15",
+    "label" : {
+      "IRI-based" : "staticRoute",
+      "undefined" : "static route"
+    },
+    "domain" : "10",
+    "attributes" : [ "object", "external" ],
+    "id" : "20"
+  }, {
+    "range" : "15",
+    "domain" : "16",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "21"
+  }, {
+    "range" : "7",
+    "domain" : "6",
+    "attributes" : [ "object", "anonymous" ],
+    "id" : "22"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/routing#assignedNetwork",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "range" : "5",
+    "label" : {
+      "IRI-based" : "assignedNetwork",
+      "undefined" : "assigned network"
+    },
+    "domain" : "24",
+    "attributes" : [ "object", "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/routing#addressValue",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "range" : "25",
+    "label" : {
+      "IRI-based" : "addressValue",
+      "undefined" : "address value"
+    },
+    "domain" : "18",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "27"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/routing#routerId",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "range" : "14",
+    "label" : {
+      "IRI-based" : "routerId",
+      "undefined" : "router id"
+    },
+    "domain" : "2",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "28"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/routing#ospfConfiguration",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "range" : "24",
+    "label" : {
+      "IRI-based" : "ospfConfiguration",
+      "undefined" : "ospf configuration"
+    },
+    "domain" : "2",
+    "attributes" : [ "object", "external" ],
+    "id" : "29"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/routing#areaId",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "range" : "26",
+    "label" : {
+      "IRI-based" : "areaId",
+      "undefined" : "area id"
+    },
+    "domain" : "17",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "30"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/routing#networkPrefix",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "networkPrefix",
+      "undefined" : "network prefix"
+    },
+    "domain" : "5",
+    "attributes" : [ "external", "datatype" ],
+    "id" : "31"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/routing#nextHop",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "range" : "4",
+    "label" : {
+      "IRI-based" : "nextHop",
+      "undefined" : "next hop"
+    },
+    "domain" : "15",
+    "attributes" : [ "object", "external" ],
+    "id" : "32"
+  }, {
+    "iri" : "https://w3id.org/mouseworld/routing#ospfArea",
+    "baseIri" : "https://w3id.org/mouseworld/routing",
+    "range" : "17",
+    "label" : {
+      "IRI-based" : "ospfArea",
+      "undefined" : "ospf area"
+    },
+    "domain" : "24",
+    "attributes" : [ "object", "external" ],
+    "id" : "33"
+  } ]
+}

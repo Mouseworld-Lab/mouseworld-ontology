@@ -1,0 +1,116 @@
+<mxfile host="Electron" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) draw.io/27.0.9 Chrome/134.0.6998.205 Electron/35.4.0 Safari/537.36" version="27.0.9">
+  <diagram name="topology" id="V1U5ahBtT8CTUrfcqf0h">
+    <mxGraphModel dx="2201" dy="1993" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="5h32e7U5oIckj3QQvWM9-0" />
+        <mxCell id="5h32e7U5oIckj3QQvWM9-1" parent="5h32e7U5oIckj3QQvWM9-0" />
+        <mxCell id="5h32e7U5oIckj3QQvWM9-3" value="mw-topo:node" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" parent="5h32e7U5oIckj3QQvWM9-1" source="5h32e7U5oIckj3QQvWM9-24" target="5h32e7U5oIckj3QQvWM9-4" edge="1">
+          <mxGeometry x="-0.2" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5h32e7U5oIckj3QQvWM9-4" value="mw-topo:Node" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#d5e8d4;strokeColor=#000000;fontSize=14;align=center;verticalAlign=middle;fontFamily=Helvetica;" parent="5h32e7U5oIckj3QQvWM9-1" vertex="1">
+          <mxGeometry x="80" y="445" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5h32e7U5oIckj3QQvWM9-5" value="mw-topo:connectsInterface (2..2)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=14;" parent="5h32e7U5oIckj3QQvWM9-1" source="5h32e7U5oIckj3QQvWM9-8" target="5h32e7U5oIckj3QQvWM9-16" edge="1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="5h32e7U5oIckj3QQvWM9-6" value="mw-topo:connectsNode (2..2)" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;fontSize=14;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="5h32e7U5oIckj3QQvWM9-1" source="SsDw5TwAPEvMpbug6Yq1-0" target="5h32e7U5oIckj3QQvWM9-4" edge="1">
+          <mxGeometry x="-0.6129" relative="1" as="geometry">
+            <mxPoint x="142" y="410" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5h32e7U5oIckj3QQvWM9-7" value="mw-topo:link" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=14;" parent="5h32e7U5oIckj3QQvWM9-1" source="5h32e7U5oIckj3QQvWM9-25" target="5h32e7U5oIckj3QQvWM9-8" edge="1">
+          <mxGeometry x="0.1667" y="-5" relative="1" as="geometry">
+            <mxPoint x="-5" y="-5" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5h32e7U5oIckj3QQvWM9-8" value="mw-topo:Link" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#d5e8d4;strokeColor=#000000;fontSize=14;align=center;verticalAlign=middle;fontFamily=Helvetica;" parent="5h32e7U5oIckj3QQvWM9-1" vertex="1">
+          <mxGeometry x="80" y="230" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5h32e7U5oIckj3QQvWM9-16" value="mw-topo:Interface" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#d5e8d4;strokeColor=#000000;fontSize=14;align=center;verticalAlign=middle;fontFamily=Helvetica;" parent="5h32e7U5oIckj3QQvWM9-1" vertex="1">
+          <mxGeometry x="303.42" y="350" width="236.58" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5h32e7U5oIckj3QQvWM9-17" value="mw-topo:interface (1..N)" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;fontSize=14;edgeStyle=orthogonalEdgeStyle;" parent="5h32e7U5oIckj3QQvWM9-1" source="5h32e7U5oIckj3QQvWM9-4" target="5h32e7U5oIckj3QQvWM9-18" edge="1">
+          <mxGeometry x="0.0617" relative="1" as="geometry">
+            <mxPoint x="350" y="515" as="sourcePoint" />
+            <mxPoint x="479" y="465" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="5h32e7U5oIckj3QQvWM9-18" value="&lt;div&gt;mw-topo:interfaceName: xsd:string&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];align=left;spacingLeft=10;fontSize=14;" parent="5h32e7U5oIckj3QQvWM9-1" vertex="1">
+          <mxGeometry x="303.42" y="380" width="236.58" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5h32e7U5oIckj3QQvWM9-24" value="mw-topo:topologyName: xsd:string" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];align=left;spacingLeft=10;fontSize=14;" parent="5h32e7U5oIckj3QQvWM9-1" vertex="1">
+          <mxGeometry x="-110" y="380" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5h32e7U5oIckj3QQvWM9-25" value="mw-topo:Topology" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];fillColor=#d5e8d4;strokeColor=#000000;fontSize=14;align=center;verticalAlign=middle;fontFamily=Helvetica;" parent="5h32e7U5oIckj3QQvWM9-1" vertex="1">
+          <mxGeometry x="-110" y="350" width="240" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="5h32e7U5oIckj3QQvWM9-32" value="&lt;div&gt;mw-topo:nodeName: xsd:string&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];align=left;spacingLeft=10;fontSize=14;" parent="5h32e7U5oIckj3QQvWM9-1" vertex="1">
+          <mxGeometry x="80" y="475" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="SsDw5TwAPEvMpbug6Yq1-0" value="&lt;div&gt;mw-topo:linkName: xsd:string&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];align=left;spacingLeft=10;fontSize=14;" parent="5h32e7U5oIckj3QQvWM9-1" vertex="1">
+          <mxGeometry x="80" y="260" width="220" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6dLLnS-HZayoIwI6H_Ci-0" value="&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&lt;/b&gt;&lt;b&gt;mw-topo&lt;/b&gt;:&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;font style=&quot;&quot;&gt;https://w3id.org/mouseworld/topology#&lt;/font&gt;&lt;/span&gt;&lt;/div&gt;&lt;div style=&quot;border-color: var(--border-color);&quot;&gt;&lt;span style=&quot;background-color: initial; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: pre;&quot;&gt;&lt;b&gt;schema: &lt;/b&gt;&lt;/span&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255)); white-space: pre;&quot;&gt;http://schema.org/&lt;/span&gt;&lt;/div&gt;&lt;b style=&quot;border-color: var(--border-color);&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;/div&gt;&lt;/b&gt;" style="shape=note;whiteSpace=wrap;html=1;backgroundOutline=1;darkOpacity=0.05;size=13;align=left;spacingLeft=10;fontFamily=Helvetica;" vertex="1" parent="5h32e7U5oIckj3QQvWM9-1">
+          <mxGeometry x="129.41" y="-210" width="620.79" height="49.45" as="geometry" />
+        </mxCell>
+        <mxCell id="6dLLnS-HZayoIwI6H_Ci-1" value="&lt;div&gt;&lt;b&gt;dcterms:title&lt;/b&gt;: &lt;span style=&quot;background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;&quot;The Mouseworld Ontology – Topology&lt;/span&gt;&lt;span style=&quot;background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;dcterms:created&lt;/b&gt;: &quot;2025-02-19&quot;^^xsd:date&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;dcterms:creator:&lt;/b&gt;&lt;span style=&quot;background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;&amp;nbsp;&quot;Ignacio Dominguez Martinez-Casanueva&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;dcterms:contributor: &quot;&lt;/b&gt;Lucia Cabanillas Rodriguez&quot;&lt;/div&gt;&lt;div&gt;&lt;b&gt;dcterms:contributor: &quot;&lt;/b&gt;Yenny Moreno Meneses&quot;&lt;/div&gt;&lt;div&gt;&lt;b&gt;dcterms:contributor: &quot;&lt;/b&gt;Javier Nuñez Fuente&quot;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;dcterms:description:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;&quot;Core MW Ontology module, which represents the network topology of the digital twin.&quot;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;&lt;b&gt;dcterms:license:&amp;nbsp;&lt;/b&gt;&lt;span style=&quot;background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;&amp;lt;http://purl.org/NET/rdflicense/APACHE2.0&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;&lt;b&gt;dcterms:publisher: &lt;/b&gt;&amp;lt;&lt;/span&gt;&lt;span style=&quot;background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;https://github.com/candil-data-fabric&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;owl:versionInfo&lt;/b&gt;: &quot;1.0.0&quot;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;owl:versionIRI:&amp;nbsp;&lt;/b&gt;&amp;lt;https://w3id.org/mouseworld/topology&lt;span style=&quot;background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;&amp;gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;b style=&quot;caret-color: rgb(0, 0, 0);&quot;&gt;owl:priorVersion:&lt;/b&gt;&lt;span style=&quot;caret-color: rgb(0, 0, 0);&quot;&gt;&amp;nbsp;&amp;lt;https://w3id.org/mouseworld/topology&amp;gt;&lt;/span&gt;&lt;span style=&quot;background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18));&quot;&gt;&lt;br&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;caret-color: rgb(0, 0, 0);&quot;&gt;&lt;div style=&quot;&quot;&gt;&lt;b style=&quot;background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;schema:codeRepository: &lt;/b&gt;&lt;span style=&quot;background-color: light-dark(rgb(255, 255, 255), rgb(18, 18, 18)); color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237));&quot;&gt;&quot;https://github.com/candil-data-fabric/mouseworld-ontology&quot;&lt;/span&gt;&lt;span style=&quot;color: light-dark(rgb(0, 0, 0), rgb(237, 237, 237)); background-color: rgb(249, 249, 249); text-align: justify;&quot;&gt;^^xsd:anyURI&lt;/span&gt;&lt;/div&gt;&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;div style=&quot;caret-color: rgb(0, 0, 0);&quot;&gt;&lt;b&gt;vann:preferredNamespacePrefix:&lt;/b&gt;&amp;nbsp;&quot;mw-topo&quot;&lt;/div&gt;&lt;div style=&quot;caret-color: rgb(0, 0, 0);&quot;&gt;&lt;b&gt;vann:preferredNamespaceUri:&lt;/b&gt;&amp;nbsp;&amp;lt;https://w3id.org/mouseworld/topology#&amp;gt;&lt;/div&gt;&lt;div style=&quot;caret-color: rgb(0, 0, 0);&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;/div&gt;" style="shape=document;whiteSpace=wrap;html=1;boundedLbl=1;labelBackgroundColor=#ffffff;strokeColor=#000000;fontSize=12;fontColor=#000000;size=0.13333333333333333;align=left;spacingLeft=10;fontFamily=Helvetica;" vertex="1" parent="5h32e7U5oIckj3QQvWM9-1">
+          <mxGeometry x="129.41" y="-150" width="620.79" height="280" as="geometry" />
+        </mxCell>
+        <mxCell id="6dLLnS-HZayoIwI6H_Ci-2" value="Legend" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="5h32e7U5oIckj3QQvWM9-1">
+          <mxGeometry x="-310" y="-210" width="390" height="330" as="geometry">
+            <mxRectangle x="330" y="370" width="80" height="30" as="alternateBounds" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6dLLnS-HZayoIwI6H_Ci-3" value="Datatype Property: datatype" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" vertex="1" parent="6dLLnS-HZayoIwI6H_Ci-2">
+          <mxGeometry x="19" y="70" width="181" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6dLLnS-HZayoIwI6H_Ci-4" value="Class" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" vertex="1" parent="6dLLnS-HZayoIwI6H_Ci-2">
+          <mxGeometry x="19" y="40" width="181" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6dLLnS-HZayoIwI6H_Ci-5" value="&lt;u&gt;Individual&lt;/u&gt;" style="rounded=0;whiteSpace=wrap;html=1;snapToPoint=1;points=[[0.1,0],[0.2,0],[0.3,0],[0.4,0],[0.5,0],[0.6,0],[0.7,0],[0.8,0],[0.9,0],[0,0.1],[0,0.3],[0,0.5],[0,0.7],[0,0.9],[0.1,1],[0.2,1],[0.3,1],[0.4,1],[0.5,1],[0.6,1],[0.7,1],[0.8,1],[0.9,1],[1,0.1],[1,0.3],[1,0.5],[1,0.7],[1,0.9]];" vertex="1" parent="6dLLnS-HZayoIwI6H_Ci-2">
+          <mxGeometry x="19" y="120" width="181" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="6dLLnS-HZayoIwI6H_Ci-6" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;endSize=8;arcSize=0;rounded=0;" edge="1" parent="6dLLnS-HZayoIwI6H_Ci-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="19" y="170" as="sourcePoint" />
+            <mxPoint x="200" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6dLLnS-HZayoIwI6H_Ci-7" value="Object Property" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];labelBackgroundColor=#ffffff;" vertex="1" connectable="0" parent="6dLLnS-HZayoIwI6H_Ci-6">
+          <mxGeometry x="-0.1269" relative="1" as="geometry">
+            <mxPoint x="11" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6dLLnS-HZayoIwI6H_Ci-8" value="" style="endArrow=block;html=1;fontColor=#000099;endFill=0;endSize=8;arcSize=0;rounded=0;" edge="1" parent="6dLLnS-HZayoIwI6H_Ci-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="20" y="190" as="sourcePoint" />
+            <mxPoint x="200" y="190" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6dLLnS-HZayoIwI6H_Ci-9" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;rdfs:subClassOf&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="6dLLnS-HZayoIwI6H_Ci-8">
+          <mxGeometry x="-0.1196" y="-1" relative="1" as="geometry">
+            <mxPoint x="14" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6dLLnS-HZayoIwI6H_Ci-10" value="" style="endArrow=open;html=1;fontColor=#000099;endFill=0;dashed=1;endSize=8;rounded=0;" edge="1" parent="6dLLnS-HZayoIwI6H_Ci-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="20" y="210" as="sourcePoint" />
+            <mxPoint x="200" y="210" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6dLLnS-HZayoIwI6H_Ci-11" value="&lt;font style=&quot;font-size: 12px;&quot;&gt;rdf:type&lt;/font&gt;" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="6dLLnS-HZayoIwI6H_Ci-10">
+          <mxGeometry x="-0.0889" y="1" relative="1" as="geometry">
+            <mxPoint x="8" as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="6dLLnS-HZayoIwI6H_Ci-13" value="MW Topology" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#D5E8D4;strokeColor=#000000;fontFamily=Helvetica;fontSize=13;" vertex="1" parent="6dLLnS-HZayoIwI6H_Ci-2">
+          <mxGeometry x="220" y="40.00000000000007" width="138.5" height="25" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
